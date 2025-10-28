@@ -43,7 +43,7 @@ export function AboutMissionSection() {
     // Animar solo cuando entra en viewport
     if (isInView) {
       animate(yearCount, 2023, { duration: 2, ease: "easeOut" });
-      animate(countriesCount, 2, { duration: 2, ease: "easeOut" });
+      animate(countriesCount, 6, { duration: 2, ease: "easeOut" });
       animate(clientsCount, 100, { duration: 2, ease: "easeOut" });
     }
 
@@ -145,7 +145,7 @@ export function AboutMissionSection() {
             {/* Stat 2: Países */}
             <motion.div className="text-center space-y-2 sm:space-y-3 px-3 sm:px-4 md:px-5 lg:px-6 xl:px-8">
               <div className={cn(themeColors.primary, textSizes.statNumber, "font-bold")}>
-                {countries}
+                +{countries}
               </div>
               <Text className={cn("text-white", textSizes.statText)}>{String(t('stats.countries'))}</Text>
             </motion.div>
@@ -153,7 +153,7 @@ export function AboutMissionSection() {
             {/* Stat 3: Clientes */}
             <motion.div className="text-center space-y-2 sm:space-y-3 px-3 sm:px-4 md:px-5 lg:px-6 xl:px-8">
               <div className={cn(themeColors.primary, textSizes.statNumber, "font-bold")}>
-                {clients}+
+                +{clients}
               </div>
               <Text className={cn("text-white", textSizes.statText)}>{String(t('stats.clients'))}</Text>
             </motion.div>
