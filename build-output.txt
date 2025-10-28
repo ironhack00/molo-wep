@@ -1,0 +1,28 @@
+npm warn Unknown user config "store-dir". This will stop working in the next major version of npm.
+
+> template-webs-1.0@0.1.0 build
+> next build --turbopack
+
+   ▲ Next.js 15.5.4 (Turbopack)
+   - Environments: .env.local
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+   Creating an optimized production build ...
+ ✓ Finished writing to disk in 23ms
+ ✓ Compiled successfully in 4.3s
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/components/organisms/DesktopNavigation.tsx:20:9
+Type error: Type '{} | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+
+[0m [90m 18 |[39m     [33m<[39m[33mdiv[39m className[33m=[39m[32m"flex justify-start items-center gap-10 max-md:hidden flex-grow basis-0"[39m[33m>[39m
+ [90m 19 |[39m       [33m<[39m[33mNavModal[39m
+[31m[1m>[22m[39m[90m 20 |[39m         service[33m=[39m{t([32m'services'[39m)}
+ [90m    |[39m         [31m[1m^[22m[39m
+ [90m 21 |[39m         subServices[33m=[39m{services[33m.[39mmap((service) [33m=>[39m ({
+ [90m 22 |[39m           name[33m:[39m tServices(service[33m.[39mslugify [36mas[39m [32m'development'[39m [33m|[39m [32m'marketing'[39m [33m|[39m [32m'automation'[39m [33m|[39m [32m'custom'[39m)[33m,[39m
+ [90m 23 |[39m           slugify[33m:[39m service[33m.[39mslugify[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

@@ -1,0 +1,1757 @@
+{
+  "nav": {
+    "services": "Services",
+    "aboutUs": "About Us",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "services": {
+    "development": "Web Development",
+    "design": "UI/UX Design",
+    "marketing": "Digital Marketing",
+    "ecommerce": "E-commerce",
+    "automation": "Automation",
+    "custom": "Custom Solutions",
+    "development-software": "Software Development"
+  },
+  "footer": {
+    "services": "Services",
+    "links": "Links",
+    "terms": "Terms",
+    "socialMedia": "Social Media",
+    "home": "Home",
+    "about": "About",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "development": "Web Development",
+    "marketing": "Digital Marketing",
+    "automation": "Automation",
+    "custom": "Custom Software",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "home": {
+    "heroTitle": "Digital",
+    "heroTitleHighlight": "Solutions",
+    "heroTitleEnd": "for Your Business",
+    "heroDescription": "We transform ideas into results. Web development, smart marketing, and automation that drive your growth.",
+    "heroCTA": "Tell us about your project",
+    "servicesTitle": "Our",
+    "servicesTitleHighlight": "Services",
+    "servicesDescription": "We offer high-quality digital solutions as a custom software development company and professional web design agency, as well as strategies as a performance marketing agency and Google Ads management agency.",
+    "whyChooseTitle": "Why",
+    "whyChooseTitleHighlight": "choose us",
+    "whyChooseTitleEnd": "for your digital growth?",
+    "whyChooseDescription": "From conceptualization to implementation, we develop a solid and memorable brand identity that differentiates you from the competition and connects with your target audience.",
+    "howWeWork": {
+      "title": "How We",
+      "titleHighlight": "Work"
+    }
+  },
+  "about": {
+    "mission": {
+      "title": "Innovation and Digital Solutions for Your Company's Success",
+      "paragraph1": "At Molokaih we transform ideas into personalized digital solutions that drive productivity, innovation and sustainable growth for businesses.",
+      "paragraph2": "We develop professional websites, performance marketing strategies and intelligent AI automations to optimize processes and results.",
+      "paragraph3": "Our team combines technology, design and marketing to offer measurable and effective strategies.",
+      "paragraph4": "We believe in transparency, constant innovation and long-term relationships based on trust and real results.",
+      "statsTitle": "Driving Digital Transformation",
+      "stats": {
+        "foundation": "Founded",
+        "countries": "Active Countries",
+        "clients": "Happy Clients"
+      }
+    },
+    "values": {
+      "title": "Values",
+      "paragraph1": "At Molokaih, our values guide every project.",
+      "paragraph2": "We unite aesthetics, functionality and innovation to create digital experiences that generate real results.",
+      "paragraph3": "We work with transparency, constant communication and genuine commitment to each client.",
+      "paragraph4": "Everything we do seeks to create lasting value for your business.",
+      "vision": {
+        "title": "Vision",
+        "text": "To be the leading digital agency in technological innovation and smart marketing, recognized for transforming businesses and turning complex challenges into simple, effective and scalable solutions.\n\nWe aspire to be the preferred strategic partner for companies looking to stand out and generate real impact in the digital world."
+      },
+      "mission": {
+        "title": "Mission",
+        "text": "To drive business growth through comprehensive digital solutions that combine web development, data-driven marketing and intelligent automation.\n\nWe focus on measurable results, lasting relationships and a culture based on excellence, transparency and shared success."
+      }
+    },
+    "team": {
+      "title": "The Team Behind Every Solution",
+      "subtitle": "We are specialists in technology, strategy and creativity, committed to driving your business's digital growth.",
+      "members": {
+        "francisco": {
+          "position": "CEO & Founder",
+          "description": "Drives Molokaih's growth through creativity, strategy, and purpose, turning ideas into digital experiences that make a difference."
+        },
+        "montserrat": {
+          "position": "COO",
+          "description": "Organizes, leads and ensures operational excellence. Coordinates teams with strategic vision and focus on results."
+        },
+        "jose": {
+          "position": "Back End Developer",
+          "description": "Leads digital projects with precision. Ensures high-quality deliverables and aligned teams."
+        },
+        "daniel": {
+          "position": "Software Engineer",
+          "description": "Expert developer in scalable solutions. Ensures quality, speed and functionality in every digital project."
+        },
+        "kevin": {
+          "position": "Project Manager",
+          "description": "Combines programming and automation with artificial intelligence to digitally scale businesses."
+        },
+        "jonathan": {
+          "position": "LLM & AI Dev",
+          "description": "Designs AI solutions to automate processes and improve customer experience."
+        },
+        "luna": {
+          "position": "Graphic Designer & CM",
+          "description": "Designs impactful visual content and manages social media with strategic focus. Creativity and branding in action."
+        },
+        "daiana": {
+          "position": "Marketing Coordinator",
+          "description": "Manages integrated digital campaigns. Aligns content, branding and business results."
+        },
+        "laura-m": {
+          "position": "Sales Agent & Setter",
+          "description": "Opens key conversations with potential clients. First point of contact for new digital business."
+        },
+        "fernanda": {
+          "position": "Setter & Intl. Agent",
+          "description": "Generates business opportunities with a human and effective approach. Key link for growth."
+        },
+        "camila": {
+          "position": "Graphic Designer",
+          "description": "Creates impactful visual identities and designs that connect brands with their audience. Specialist in branding and visual communication."
+        },
+        "fernando": {
+          "position": "Automation Dev",
+          "description": "Specialist in creating automated systems that optimize business processes. Develops intelligent solutions to improve operational efficiency."
+        },
+        "denise": {
+          "position": "Audiovisual Producer",
+          "description": "Specialist in high-quality audiovisual content production. Creates impactful videos that effectively communicate brand messages."
+        },
+        "guillermo": {
+          "position": "Full-Stack Developer",
+          "description": "Specialist in complete web application development. Masters both frontend and backend to create comprehensive and scalable digital solutions."
+        },
+        "luciana": {
+          "position": "Community Manager",
+          "description": "Specialist in digital community management and engagement strategies. Builds and maintains strong relationships with audiences on social media."
+        },
+        "manu": {
+          "position": "Graphic Designer",
+          "description": "Specialist in graphic design and visual communication. Creates impactful brand identities and designs that emotionally connect with audiences."
+        },
+        "laura": {
+          "position": "Sales Agent & Setter",
+          "description": "Opens key conversations with potential clients. First point of contact for new digital business opportunities."
+        },
+        "fernanda": {
+          "position": "Setter & Intl. Agent",
+          "description": "Generates business opportunities with a human and effective approach. A key link in growth."
+        }
+      }
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "Let's talk about your project",
+      "subtitle": "Have questions about our products/services, orders or just want to say hello? We're here to help you.",
+      "nombre": "First Name",
+      "apellido": "Last Name",
+      "telefono": "Phone",
+      "email": "Email",
+      "empresa": "Company",
+      "pais": "Country",
+      "mensaje": "Message",
+      "placeholders": {
+        "nombre": "Enter your first name",
+        "apellido": "Enter your last name",
+        "telefono": "Ex: +1 234 567 8900",
+        "email": "example@email.com",
+        "empresa": "Your company name",
+        "pais": "Select your country",
+        "mensaje": "Tell us about your project or inquiry..."
+      },
+      "required": "* Required",
+      "send": "Send Message",
+      "sending": "Sending message...",
+      "or": "or",
+      "calendlyButton": "Schedule call",
+      "successTitle": "Message sent successfully!",
+      "successMessage": "Thank you for contacting us. We'll get back to you shortly to help you with your project.",
+      "errorTitle": "Error sending",
+      "errorMessage": "There was a problem sending your message. Please try again.",
+      "privacyNotice": "🔒 Your privacy is our priority. All your data is protected with enterprise-level encryption and will never be shared with third parties. We comply with international data protection regulations and only use your information to respond to your inquiry."
+    },
+    "info": {
+      "title": "Contact Us",
+      "subtitle": "Have questions about our products/services, orders or just want to say hello? We're here to help you.",
+      "phone": "Phone",
+      "email": "Email"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know",
+    "categories": {
+      "benefits": "Benefits and Technology",
+      "general": "General Information",
+      "process": "Process and Support"
+    },
+    "items": {
+      "impulso-negocio": {
+        "question": "How can a website boost my business?",
+        "answer": "Having a website helps more people discover your business, makes it easier for them to contact you and builds trust and credibility. With a well-structured design and effective promotion, you'll attract more customers and successfully grow your business."
+      },
+      "que-es-seo": {
+        "question": "What is SEO and why does my business need it?",
+        "answer": "SEO (Search Engine Optimization) helps your website rank better in search engine results, increasing your online visibility and attracting more potential customers. It positions your business ahead of competitors, making it easier for customers to find and choose you."
+      },
+      "landing-page": {
+        "question": "How can a landing page help me sell more?",
+        "answer": "A landing page is specifically designed to convert visitors into leads or customers. It clearly highlights a specific product or offer, guiding users directly toward an action (buy, register or request information), which directly increases your sales."
+      },
+      "publicidad-pagada": {
+        "question": "How does paid advertising work and how much should I invest?",
+        "answer": "Paid advertising (Google Ads, Facebook Ads, etc.) allows you to target your ads to a specific audience. The budget depends on your goals, market and industry; you can start with a small investment and adjust it based on results and allocated budget. This is always backed by well-designed and personalized strategies to optimize campaign performance, ensuring your investment generates the greatest possible impact on your audience and business growth."
+      },
+      "web-vs-mobile": {
+        "question": "What's the difference between a web application and a mobile application?",
+        "answer": "A web application runs directly in your browser, offering instant accessibility without installation. A mobile application, however, is specifically designed to be downloaded, providing better performance, unique features and offline access. Both are optimized for all devices."
+      },
+      "software-personalizado": {
+        "question": "What are the benefits of custom software and how do I know if my business needs it?",
+        "answer": "If the software you currently use doesn't align with your business processes, requires manual integration of multiple tools, or if you want to automate tasks, a custom software solution may be the best option.",
+        "points": [
+          "Total adaptability and accessibility to meet your business needs",
+          "Greater productivity and efficiency",
+          "Process automation to save time",
+          "Scalability to grow with your business",
+          "Integration with the tools you already use",
+          "User training and support services"
+        ]
+      },
+      "servicios-molokaih": {
+        "question": "What services does Molokaih offer?",
+        "answer": "We offer web development and design, automation, artificial intelligence, custom software, digital marketing, maintenance and support."
+      },
+      "paises": {
+        "question": "In which countries do you have a presence or serve clients?",
+        "answer": "We have a digital presence in North America and Latin America, and serve clients in countries such as the United States, Canada, Mexico, Argentina, Colombia and more."
+      },
+      "tipo-empresas": {
+        "question": "What type of companies does Molokaih serve?",
+        "answer": "We work with companies of all sizes, primarily in the B2B sector. We support entrepreneurs and businesses from various industries such as construction, retail, professional services and more."
+      },
+      "idiomas": {
+        "question": "In what languages can you serve me?",
+        "answer": "We serve in English, Spanish and Portuguese."
+      },
+      "servicios-individuales": {
+        "question": "Can I hire just one service or must it be complete packages?",
+        "answer": "You can hire individual services or comprehensive packages, depending on your company's needs."
+      },
+      "proceso-trabajo": {
+        "question": "What is the work process with Molokaih?",
+        "answer": "We start with a consultation to understand your goals, define the scope, manage the project in clear stages and keep you informed throughout the process."
+      },
+      "mantenimiento": {
+        "question": "Do you offer support and maintenance after delivery?",
+        "answer": "Yes, we have maintenance and proactive support plans to ensure optimal operation of your digital platforms."
+      },
+      "contacto-soporte": {
+        "question": "How can I contact the support team?",
+        "answer": "You can reach us via email, phone, social media or chat on our website."
+      }
+    }
+  },
+  "automation": {
+    "meta": {
+      "title": "Smart Automation | Chatbots and Social Media | Molokaih",
+      "description": "Optimize processes, save time and increase efficiency with automation solutions designed specifically for your business. 24/7 chatbots and social media management."
+    },
+    "hero": {
+      "titleBefore": "Smart",
+      "titleHighlight": "automation to boost",
+      "titleAfter": "your business",
+      "description": "Optimize processes, save time and increase efficiency with automation solutions designed specifically for your business.",
+      "btnContact": "Contact",
+      "btnDemo": "Show demo"
+    },
+    "why": {
+      "title": "Why Choose",
+      "titleHighlight": "Our Solutions?",
+      "titleEnd": "",
+      "description": "We offer intelligent automation solutions to transform your customer interaction and optimize your business processes",
+      "redesSociales": {
+        "title": "Social Media Strategy Specialists",
+        "description": "Our team of experts develops and executes personalized strategies that maximize your presence on social media. We automate publications, metrics analysis and engagement so your brand grows effortlessly while you focus on what you do best."
+      },
+      "chatbots": {
+        "title": "Chatbot Design For Your Brand",
+        "description": "We create intelligent chatbots that serve your customers 24/7, answer frequently asked questions, qualify leads and generate conversions. Conversational solutions that improve user experience and automatically increase your sales."
+      },
+      "resultados": {
+        "title": "Tangible Results from Day One",
+        "description": "We implement solutions that deliver immediate value. From day one you'll see improvements in efficiency, time savings and resource optimization. Clear metrics and detailed reports so you can verify the real impact on your business."
+      }
+    },
+    "services": {
+      "publicacionesRedes": {
+        "title": "Automated social media publications",
+        "description": "Schedule and publish content on multiple platforms automatically, optimizing your digital presence and saving valuable time in social media management."
+      },
+      "chatbots247": {
+        "title": "Intelligent chatbots with 24/7 service",
+        "description": "Offer instant responses to your customers at any time of day. Our chatbots learn and continuously improve to provide an exceptional experience."
+      },
+      "integraciones": {
+        "title": "Integrations and automations",
+        "description": "Connect all your tools and systems in a unified workflow. Automate repetitive processes and improve your business's operational efficiency."
+      },
+      "consultasTecnologicas": {
+        "title": "Technology consultations",
+        "description": "Receive expert advice on technology and automation. We help you identify optimization opportunities and implement the best solutions for your business."
+      }
+    },
+    "assistant": {
+      "title": "The Best personalized assistant for you",
+      "subtitle": "Choose your assistant and start chatting",
+      "description": "Discover some of the projects that transformed ideas into functional and scalable software solutions",
+      "variant2": {
+        "title": "Hello, Curious",
+        "subtitle": "Discover how our Bots help you"
+      }
+    },
+    "notebook": {
+      "title": "Where efficiency becomes automatic"
+    },
+    "chatbot": {
+      "hotel": {
+        "name": "Virtual assistant for Maple & Grill restaurant, designed to respond to menu and event inquiries",
+        "greeting": "Hello! I'm your hotel assistant. How can I help you today?"
+      },
+      "restaurant": {
+        "name": "Virtual assistant for Maple Leaf Lodge Hotel, created to handle inquiries about rooms, services, spa and events",
+        "greeting": "Welcome! Would you like to make a reservation or see our menu?"
+      },
+      "painting": {
+        "name": "Virtual assistant for professional painting company, focused on providing information about residential, commercial and industrial painting",
+        "greeting": "Hi, do you need a painting quote?"
+      },
+      "flooring": {
+        "name": "Virtual assistant specialized in residential, commercial and industrial flooring finish consultations",
+        "greeting": "Hello! I'll help you find the perfect floor for your space."
+      },
+      "available": "Available",
+      "clearChat": "Clear chat",
+      "placeholder": "Type your message...",
+      "demoResponse": "Thanks for your message. This is a demo, but in production we would respond with AI."
+    },
+    "faq": {
+      "title": "",
+      "titleHighlight": "Frequently Asked",
+      "titleEnd": " Questions",
+      "items": {
+        "faq1": {
+          "question": "What social media tasks can be automated?",
+          "answer": "With our solutions you can schedule publications, manage direct messages, respond to comments, update stories and even launch advertising campaigns on Instagram, WhatsApp and Facebook. This allows you to maintain a constant presence without depending on daily manual management."
+        },
+        "faq2": {
+          "question": "On which platforms do chatbots work?",
+          "answer": "The chatbots we develop integrate natively with WhatsApp, Facebook Messenger and Instagram Direct. This way, your customers receive fast and consistent responses on any of the channels where they interact with you."
+        },
+        "faq3": {
+          "question": "Do I need technical knowledge to use them?",
+          "answer": "You don't need previous experience or programming knowledge. We take care of designing and configuring the automations so they are intuitive and easy to use. This way you can focus on your business while technology works for you."
+        },
+        "faq4": {
+          "question": "Can they integrate with my current tools?",
+          "answer": "Yes, our automations connect with CRM systems, email marketing platforms and analytics tools. This ensures a unified digital ecosystem, where all your data flows in the same environment and facilitates strategic decision making."
+        },
+        "faq5": {
+          "question": "How do automations improve customer engagement?",
+          "answer": "Bots respond in seconds and offer personalized attention, which increases your customers' satisfaction. Additionally, automated campaigns deliver relevant and timely messages, generating more interaction and strengthening the relationship with your community."
+        },
+        "faq6": {
+          "question": "What level of security do data and conversations have?",
+          "answer": "Security is a priority. We implement advanced encryption and data protection protocols to safeguard both your information and your customers'. We comply with best practices in cybersecurity so you can operate with complete confidence."
+        },
+        "faq7": {
+          "question": "Can I make changes or adjustments to the automations?",
+          "answer": "Of course. We offer continuous support and total flexibility to modify responses, flows or integrations. As your digital strategy evolves, we adapt the automations so they are always aligned with your business objectives."
+        }
+      }
+    }
+  },
+  "development": {
+    "hero": {
+      "titleBefore": "High-Performance",
+      "titleHighlight": "Web Solutions",
+      "titleAfter": "That Drive Business Growth",
+      "description": "Fast, conversion-optimized websites that rank and drive results. Built to turn visitors into customers.",
+      "btnServices": "Services",
+      "btnContact": "Contact"
+    },
+    "services": {
+      "title": "Our",
+      "titleHighlight": "Services",
+      "titleEnd": "Web Design",
+      "description": "From websites for small businesses to complex online stores, we offer a wide range of web design services aligned with your goals.",
+      "corporate": {
+        "title": "Corporate Websites",
+        "description": "Professional websites that reflect your company's solidity and values, optimized to build trust, capture leads and position your brand as an industry leader."
+      },
+      "ecommerce": {
+        "title": "Ecommerce Platform",
+        "description": "Complete online stores with integrated payment gateways, inventory management, optimized cart and smooth shopping experience to maximize your online sales."
+      },
+      "landing": {
+        "title": "Landing Pages",
+        "description": "Landing pages specifically designed to convert visitors into customers, with strategic calls to action, persuasive design and continuous optimization for maximum ROI."
+      },
+      "redesign": {
+        "title": "Website Redesign",
+        "description": "We transform outdated websites into modern, fast and optimized platforms, keeping your valuable content while improving design, SEO and user experience."
+      }
+    },
+    "why": {
+      "title": "Why a",
+      "titleHighlight": "Modern Website",
+      "titleEnd": "Matters",
+      "description": "In today's digital world, a website is more than an online presence, it's a business tool. A well-designed site increases visibility and captures customers.",
+      "responsive": {
+        "title": "Responsive and Centered Design",
+        "description": "Your site adapts perfectly to any device, from mobile to large screens, ensuring an optimal user experience regardless of how your customers visit you."
+      },
+      "seo": {
+        "title": "SEO and Performance Ready",
+        "description": "Optimized from code to content to rank in the top positions on Google, with ultra-fast loading that improves conversions and satisfies search engines."
+      },
+      "branding": {
+        "title": "Branding Through Design",
+        "description": "Every visual element tells your brand story, from colors to animations, creating a memorable digital identity that emotionally connects with your audience."
+      }
+    },
+    "whyChoose": {
+      "title": "Why choose",
+      "titleHighlight": "Molokaih",
+      "titleEnd": "for your web project",
+      "description": "We are a Google Ads management and performance marketing agency that combines strategy, creativity and technology to deliver real and sustainable results.",
+      "datos": {
+        "title": "Data-Driven Decisions",
+        "description": "Every design element and functionality is backed by real data analysis, user metrics and proven best practices to ensure measurable results."
+      },
+      "seoPerformance": {
+        "title": "SEO and Performance Ready",
+        "description": "Your website is born optimized for search engines and loading speed, ensuring Google visibility and exceptional user experience from day one."
+      },
+      "branding": {
+        "title": "Branding Through Design",
+        "description": "We transform your brand identity into a coherent and memorable digital experience that emotionally connects with your audience and differentiates you from the competition."
+      }
+    },
+    "projects": {
+      "title": "All in One",
+      "titleHighlight": "Creative Suite",
+      "description": "Discover some of the projects that transform ideas into functional and scalable web solutions."
+    },
+    "pricing": {
+      "title": "We Have Our",
+      "titleHighlight": "Special",
+      "titleEnd": "Packages",
+      "description": "Complete digital solutions adapted to each stage of your business.",
+      "categories": {
+        "web-development": {
+          "title": "Web Development",
+          "description": "Professional websites designed to convert visitors into customers.",
+          "period": "One-Time Payment",
+          "plans": {
+            "simple-kit": {
+              "name": "Simple Kit",
+              "idealFor": "Entrepreneurs and small businesses that need a professional and functional web presence.",
+              "features": [
+                "Up to 5 sections",
+                "Responsive design",
+                "Contact form",
+                "SEO structure",
+                "Social media integration",
+                "SSL certificate",
+                "5 email accounts"
+              ]
+            },
+            "professional-kit": {
+              "name": "Professional Kit",
+              "idealFor": "Growing companies looking for a more robust website with better contact tools and SEO.",
+              "features": [
+                "Up to 8 sections",
+                "Responsive design",
+                "ADVANCED contact form",
+                "SEO configuration with 5 keywords",
+                "Social media integration",
+                "SSL certificate",
+                "8 email accounts"
+              ]
+            },
+            "ultimate-kit": {
+              "name": "Ultimate Kit",
+              "idealFor": "Established companies that require a complete website, with advanced SEO, hosting and domain included for the first year.",
+              "features": [
+                "Up to 10 sections",
+                "Responsive design",
+                "ADVANCED contact form",
+                "SEO configuration with 10 keywords",
+                "Social media integration",
+                "SSL certificate",
+                "UNLIMITED email accounts",
+                "1 year of hosting",
+                "1 year of domain"
+              ]
+            }
+          }
+        },
+        "web-maintenance": {
+          "title": "Web Maintenance",
+          "description": "Keep your website secure, updated and working perfectly.",
+          "period": "Annual",
+          "plans": {
+            "care-basic": {
+              "name": "Care Plan Basic",
+              "idealFor": "Small businesses with basic websites that require essential security and hosting maintenance.",
+              "features": [
+                " Domain and Hosting (renewal for 1 year)",
+                "5GB capacity",
+                "Basic site monitoring and updates",
+                "SSL certificate maintenance",
+                "Technical support"
+              ]
+            },
+            "care-plus": {
+              "name": "Care Plan Plus",
+              "idealFor": "Companies with websites that need periodic content updates and priority technical support.",
+              "features": [
+                " Domain and Hosting (renewal for 1 year)",
+                "10GB capacity",
+                "Everything from Simple Kit plan",
+                "Uptime monitoring (alerts if site goes down)",
+                "2 minor content updates (text or images)",
+                "Speed and performance optimization",
+                "Priority technical support via email and chat"
+              ]
+            },
+            "care-pro": {
+              "name": "Care Plan Pro",
+              "idealFor": "Companies with complex websites that require advanced security, frequent updates and guaranteed support.",
+              "features": [
+                " Domain and Hosting (renewal for 1 year)",
+                "15GB capacity",
+                "Everything from Professional Kit plan",
+                "Plugin maintenance and updates",
+                "Advanced security and attack protection",
+                "4 content updates (small texts, images, or design changes)",
+                "Technical support with guaranteed 24h response time"
+              ]
+            }
+          }
+        },
+        "ecommerce": {
+          "title": "Ecommerce",
+          "description": "Complete online stores to sell your products online.",
+          "period": "One-Time Payment",
+          "plans": {
+            "launch-store": {
+              "name": "Launch Store",
+              "idealFor": "Entrepreneurs who want to launch their first online store with a basic product catalog.",
+              "features": [
+                "Up to 5 sections",
+                "Responsive design",
+                "UP TO 50 PRODUCTS",
+                "PRODUCT CATALOG DESIGN",
+                "Up to 3 product categories",
+                "Mini shopping cart",
+                "Basic payment gateway",
+                "Social media integration",
+                "Basic contact form",
+                "Product search and filters",
+                "1 promotional banner",
+                "SEO configuration: 5 keywords",
+                "Complete site deployment",
+                "30 days post-launch support"
+              ]
+            },
+            "business-store": {
+              "name": "Business Store",
+              "idealFor": "Established businesses that need a robust online store with greater product capacity and advanced features.",
+              "features": [
+                "Up to 8 sections",
+                "Responsive design",
+                "UP TO 85 PRODUCTS",
+                "Optimized PRODUCT CATALOG DESIGN",
+                "Up to 6 product categories",
+                "Complete shopping cart",
+                "Payment gateway",
+                "Social media integration",
+                "Contact form",
+                "Product search and filters",
+                "2 promotional banners",
+                "SEO configuration: 10 keywords",
+                "Complete site deployment",
+                "30 days post-launch support",
+                "Custom product sorting"
+              ]
+            },
+            "full-commerce": {
+              "name": "Full Commerce",
+              "idealFor": "Companies that require a complete ecommerce with high product capacity, reviews, coupons and hosting included.",
+              "features": [
+                "Up to 10 sections",
+                "Responsive design",
+                "UP TO 150 PRODUCTS",
+                "Optimized PRODUCT CATALOG DESIGN",
+                "Up to 10 product categories",
+                "Complete shopping cart",
+                "Payment gateway",
+                "Social media integration",
+                "Contact form",
+                "Product search and filters",
+                "4 promotional banners",
+                "SEO configuration: 20 keywords",
+                "Complete site deployment",
+                "30 days post-launch support",
+                "Custom product sorting",
+                "Product offers (coupons, discounts, etc.)",
+                "PRODUCT RATING AND REVIEWS",
+                "1 YEAR OF HOSTING",
+                "1 YEAR OF DOMAIN"
+              ]
+            }
+          }
+        },
+        "ecommerce-maintenance": {
+          "title": "Ecommerce Maintenance",
+          "description": "Keep your online store running smoothly.",
+          "period": "Annual",
+          "plans": {
+            "ecare-basic": {
+              "name": "E-Care Basic",
+              "idealFor": "Small online stores that need basic hosting, domain and security maintenance.",
+              "features": [
+                " Domain and Hosting (renewal for 1 year)",
+                "10GB capacity",
+                "Basic site monitoring and updates",
+                "SSL certificate maintenance",
+                "Basic technical support"
+              ]
+            },
+            "ecare-plus": {
+              "name": "E-Care Plus",
+              "idealFor": "Growing ecommerce that need content updates and constant performance optimization.",
+              "features": [
+                " Domain and Hosting (renewal for 1 year)",
+                "15GB capacity",
+                "Everything from Simple Kit plan",
+                "Uptime monitoring (alerts if site goes down)",
+                "3 minor content updates (text or images)",
+                "Speed and performance optimization",
+                "Priority technical support via email and chat"
+              ]
+            },
+            "ecare-pro": {
+              "name": "E-Care Pro",
+              "idealFor": "High-traffic online stores that require advanced security, frequent updates and guaranteed 24h support.",
+              "features": [
+                " Domain and Hosting (renewal for 1 year)",
+                "15GB capacity",
+                "Everything from Professional Kit plan",
+                "Plugin maintenance and updates",
+                "Advanced security and attack protection",
+                "4 content updates (small texts, images, or design changes)",
+                "Technical support with guaranteed 24h response time"
+              ]
+            }
+          }
+        },
+        "social-media": {
+          "title": "Social Media Management",
+          "description": "Professional social media management to grow your brand.",
+          "period": "Monthly",
+          "plans": {
+            "social-start": {
+              "name": "Social Start",
+              "setupFee": "Setup Fee: $199 / One-Time Payment",
+              "idealFor": "Entrepreneurs and small businesses starting their social media presence and needing consistent content.",
+              "features": [
+                " Number of platforms: 2",
+                " Included platforms: Instagram, Facebook, LinkedIn or Twitter",
+                " Static or animated posts: 7 per month",
+                " Stories per platform: 4 per month",
+                " Social media audit",
+                " Monthly social media management",
+                " Monthly content calendar",
+                " Monthly content creation",
+                " Monthly social media copywriting",
+                " Social media content upload",
+                " Personalized monthly marketing strategy"
+              ]
+            },
+            "social-pro": {
+              "name": "Social Pro",
+              "setupFee": "Setup Fee: $299 / One-Time Payment",
+              "idealFor": "Established companies looking to increase their engagement and build an active social media community.",
+              "features": [
+                " Number of platforms: 2",
+                " Included platforms: Instagram, Facebook, LinkedIn or Twitter",
+                " Static or animated posts: 10 per month",
+                " Stories per platform: 18 per month",
+                " Community management: Interaction with other pages (2 hours per month)",
+                " Social media audit",
+                " Monthly social media management",
+                " Monthly content calendar",
+                " Monthly content creation",
+                " Monthly social media copywriting",
+                " Social media content upload",
+                " Social profile optimization",
+                " Personalized monthly marketing strategy",
+                " Designated account manager"
+              ]
+            },
+            "social-max": {
+              "name": "Social Max",
+              "setupFee": "Setup Fee: $399 / One-Time Payment",
+              "idealFor": "Brands that require a dominant social media presence with high-quality audiovisual content and included advertising campaigns.",
+              "features": [
+                " Number of platforms: 3",
+                " Included platforms: Instagram, Facebook, LinkedIn or Twitter",
+                " Static or animated posts: 16 per month",
+                " Stories per platform: 28 per month",
+                " 4 edited reels / videos",
+                " Includes 1 social media campaign (setup, design and publication), advertising investment paid by client",
+                " Community management: Interaction with other pages (4 hours per month)",
+                " Social media audit",
+                " Monthly social media management",
+                " Monthly content calendar",
+                " Monthly content creation",
+                " Monthly social media copywriting",
+                " Social media content upload",
+                " Social profile optimization",
+                " Designated account manager"
+              ]
+            }
+          }
+        },
+        "paid-ads": {
+          "title": "Paid Advertising - META ADS",
+          "description": "Professional advertising campaigns on Meta (Facebook and Instagram).",
+          "period": "Monthly",
+          "plans": {
+            "ads-essential": {
+              "name": "Ads Essential",
+              "setupFee": "Setup Fee: $459 / One-Time Payment",
+              "idealFor": "Ad investment less than $2,000 USD/month (paid directly to platforms)",
+              "features": [
+                " 1 Advertising Platform (Facebook, Instagram)",
+                " Ad account setup on Facebook or Instagram",
+                " 1 Meta Ads campaign",
+                " 3 configured ads",
+                " Monthly campaign strategy",
+                " Monthly metrics report",
+                " Objectives and audience setup",
+                " Demographic configuration",
+                " Budget setup and monitoring",
+                " Eligibility verification and ad approval",
+                " Traffic statistics analysis"
+              ]
+            },
+            "ads-growth": {
+              "name": "Ads Growth",
+              "setupFee": "Setup Fee: $659 / One-Time Payment",
+              "idealFor": "Ad investment less than $5,000 USD/month (paid directly to platforms)",
+              "features": [
+                " 1 Advertising Platform (Facebook, Instagram)",
+                " Ad account setup on Facebook or Instagram",
+                " 3 Meta Ads campaigns",
+                " 5 configured ads",
+                " Monthly campaign strategy",
+                " Monthly metrics report",
+                " Objectives and audience setup",
+                " Demographic configuration",
+                " Budget setup and monitoring",
+                " Eligibility verification and ad approval",
+                " Traffic statistics analysis"
+              ]
+            },
+            "ads-premium": {
+              "name": "Ads Premium",
+              "setupFee": "Setup Fee: $859 / One-Time Payment",
+              "idealFor": "Ad investment less than $10,000 USD/month (paid directly to platforms)",
+              "features": [
+                " 1 Advertising Platform (Facebook, Instagram)",
+                " Ad account setup on Facebook or Instagram",
+                " Unlimited Meta Ads campaigns",
+                " Editing and production of 1 reel for ads",
+                " Daily optimization",
+                " Monthly campaign strategy",
+                " Monthly metrics report",
+                " Advanced objectives and audience setup",
+                " Demographic configuration",
+                " Budget setup and monitoring",
+                " Eligibility verification and ad approval",
+                " Traffic statistics analysis"
+              ]
+            }
+          }
+        },
+        "seo": {
+          "title": "SEO - Google Positioning",
+          "description": "Position your website in the top Google results.",
+          "period": "Monthly",
+          "plans": {
+            "seo-essential": {
+              "name": "SEO Essential",
+              "setupFee": "Setup Fee: $629 / One-Time Payment",
+              "idealFor": "Businesses that want to start ranking on Google with a solid SEO strategy and optimized keywords.",
+              "features": [
+                "✓ Initial Audit",
+                "✓ 50 Keywords",
+                "✓ SEO-optimized web structure",
+                "✓ Monthly solid positioning strategy",
+                "✓ Google My Business (GMB) setup",
+                "✓ Monthly metrics report",
+                "✓ Strategic link building"
+              ]
+            },
+            "seo-advanced": {
+              "name": "SEO Advanced",
+              "setupFee": "Setup Fee: $529 / One-Time Payment",
+              "idealFor": "Competitive companies looking to dominate their niche with monthly blog content and aggressive SEO strategy.",
+              "features": [
+                "✓ Initial Audit",
+                "✓ 85 Keywords",
+                "✓ 10 Monthly blog posts on website",
+                "✓ SEO-optimized web structure",
+                "✓ Monthly solid positioning strategy",
+                "✓ Google My Business (GMB) setup",
+                "✓ Monthly metrics report",
+                "✓ Strategic link building"
+              ]
+            }
+          }
+        },
+        "ecosystem": {
+          "title": "Digital Ecosystem Packages",
+          "description": "Comprehensive solutions for your complete digital presence.",
+          "period": "Monthly",
+          "plans": {
+            "full-digital": {
+              "name": "Full Digital",
+              "setupFee": "Setup Fee: $199 / One-Time Payment",
+              "idealFor": "Entrepreneurs and small brands that need a solid and automated digital presence.",
+              "features": [
+                " Website:",
+                "1 Landing Page",
+                "Domain and hosting included for 1 year",
+                "Unlimited email accounts",
+                "Integration with external tools (Social Media, email, CRM)",
+                " Social Media:",
+                "Up to 2 profiles (Instagram, Facebook and LinkedIn)",
+                "18 posts/stories per month",
+                "Copywriting, hashtags and editorial strategy",
+                "Custom template design",
+                "Automations:",
+                "3 AI Agents (WhatsApp, Instagram, Facebook or Telegram)",
+                "Automatic welcome response + schedules + FAQ",
+                "Complimentary extras:",
+                "Complete Brand Kit (logo design, typography)",
+                "Social media setup",
+                "Monthly report with metrics and strategy"
+              ]
+            },
+            "automate-ecommerce": {
+              "name": "Automate Ecommerce",
+              "setupFee": "Setup Fee: $299 / One-Time Payment",
+              "idealFor": "Businesses that want to sell online with a functional store, automate customer service processes and manage their networks with a comprehensive content strategy.",
+              "features": [
+                " E-Commerce:",
+                "E-commerce up to 25 products",
+                "Cart, checkout and payment integration",
+                "Domain and hosting included for 1 year",
+                "Unlimited email accounts",
+                "Integration with external tools (Social Media, email, CRM)",
+                " Social Media:",
+                "Up to 2 profiles (Instagram, Facebook and LinkedIn)",
+                "18 posts/stories per month",
+                "Copywriting, hashtags and editorial strategy",
+                "Custom template design",
+                "Automations:",
+                "2 AI Agents (WhatsApp, Instagram, Facebook or Telegram)",
+                "1 AI Agent for ticket management",
+                "Catalog sending",
+                "Automatic welcome response + schedules + FAQ",
+                "Complimentary extras:",
+                "Complete Brand Kit (logo design, typography)",
+                "Social media setup",
+                "Monthly report with metrics and strategy"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "faq": {
+      "title": "",
+      "titleHighlight": "Frequently Asked",
+      "titleEnd": " Questions",
+      "items": {
+        "tiempo-desarrollo": {
+          "question": "How long does it take to develop a professional website?",
+          "answer": "Time varies depending on project complexity. A simple landing page can be ready in 2-3 weeks, a corporate site with 5-10 pages takes 4-6 weeks, and a complete online store may require 8-12 weeks. We include design, development, review and optimization phases. We provide a detailed timeline from the start so you know exactly what to expect at each stage."
+        },
+        "costo-mantenimiento": {
+          "question": "Do I need to pay monthly maintenance for my website?",
+          "answer": "It depends on your needs. Hosting and domain have standard annual costs ($100-300 USD/year). Technical maintenance (security updates, plugins, backups) is optional but recommended ($50-150 USD/month). If your site requires frequent content updates, design changes or priority support, we offer maintenance plans that include these services plus monthly development hours."
+        },
+        "cms-editar": {
+          "question": "Will I be able to edit my site's content myself after delivery?",
+          "answer": "Absolutely. All our sites include an intuitive administration panel (CMS) where you can edit texts, add images, create new pages and update content without programming. Additionally, we train you in a 1-2 hour session so you master all functions. For more complex design or structure changes, you can always count on our technical support."
+        },
+        "responsive-mobile": {
+          "question": "Will the website look good on phones and tablets?",
+          "answer": "Yes, we design with a mobile-first approach. This means your site adapts perfectly to any device (phone, tablet, laptop, desktop) without losing functionality or aesthetics. Over 70% of users browse from mobile, which is why we especially optimize the mobile experience: loading speed, touch navigation, accessible buttons and well-distributed content. We test on multiple devices before delivery."
+        },
+        "seo-posicionamiento": {
+          "question": "Will my website appear on Google automatically?",
+          "answer": "Yes, but ranking well requires continuous work. We deliver your site with optimized technical SEO: clean code, fast speed, sitemap, meta tags, and correct structure. This provides the foundation for Google to index you. However, appearing in top results requires content strategy, keyword research, link building and continuous optimization. We offer monthly SEO services if you're looking for competitive positioning in your industry."
+        }
+      }
+    }
+  },
+  "marketing": {
+    "hero": {
+      "titleBefore": "Agency of",
+      "titleHighlight": "Google Ads Management",
+      "titleAfter": "and Performance Marketing",
+      "description": "We boost your digital presence with strategic campaigns on Google Ads, SEO positioning and social media to maximize your reach and results.",
+      "btnPortfolio": "Portfolio",
+      "btnServices": "Services"
+    },
+    "intro": {
+      "title": "We make your",
+      "titleHighlight": "digital presence",
+      "titleEnd": "grow",
+      "description": "Comprehensive strategies to connect with your audience, convert customers and scale your business through performance marketing and expert Google Ads management."
+    },
+    "portfolio": {
+      "title": "Success",
+      "titleHighlight": "Stories",
+      "titleEnd": "in Performance Marketing",
+      "categories": {
+        "social": "Social Media",
+        "brandkit": "Branding",
+        "reels": "Reels"
+      }
+    },
+    "services": {
+      "community-manager": {
+        "title": "Community Manager",
+        "description": "Professional management of your social media, strategic content creation and community building to strengthen your digital presence and connect with your audience authentically."
+      },
+      "marketing-digital": {
+        "title": "Digital Marketing",
+        "description": "Comprehensive digital marketing strategies to increase your online visibility, generate qualified leads and convert visitors into customers through personalized and data-driven campaigns."
+      },
+      "diseno-grafico": {
+        "title": "Graphic Design",
+        "description": "Creation of unique and memorable visual identity for your brand, from logos to complete advertising material, with professional designs that communicate your values and stand out in the market."
+      },
+      "seo": {
+        "title": "Organic SEO Positioning",
+        "description": "Strategic optimization of your website to reach the top positions on Google organically, increasing qualified traffic and improving your visibility without relying on paid advertising."
+      },
+      "audiovisual": {
+        "title": "Audiovisual Design",
+        "description": "Production of high-impact audiovisual content, from promotional videos to social media reels, that capture your audience's attention and tell your story memorably."
+      },
+      "meta-ads": {
+        "title": "Meta Ads Advertising",
+        "description": "Optimized advertising campaigns on Facebook and Instagram to maximize your reach, engagement and conversions, with precise targeting and expert budget management for the best ROI."
+      },
+      "google-ads": {
+        "title": "Google Ads Advertising",
+        "description": "Professional management of Google Ads campaigns to appear in the top results when your customers search for you, with continuous optimization to reduce costs and increase conversions."
+      }
+    },
+    "whyChoose": {
+      "title": "Why choose",
+      "titleHighlight": "Molokaih",
+      "titleEnd": "",
+      "description": "We are a Google Ads management and performance marketing agency that combines strategy, creativity and technology to deliver real and sustainable results.",
+      "estrategia": {
+        "title": "Personalized Strategies",
+        "description": "We develop unique marketing plans adapted to your industry, goals and audience, maximizing return on investment with proven and optimized tactics."
+      },
+      "resultados": {
+        "title": "Measurable Results",
+        "description": "Real-time tracking of all your important metrics with clear and transparent reports that demonstrate the real impact of each action."
+      },
+      "contenido": {
+        "title": "Content That Connects",
+        "description": "Creation of authentic and relevant content that resonates with your audience, generating genuine engagement and building lasting relationships."
+      },
+      "ia": {
+        "title": "AI Automation",
+        "description": "Implementation of artificial intelligence to optimize processes, segment audiences and personalize messages at scale without losing the human touch."
+      },
+      "equipo": {
+        "title": "Multidisciplinary Team",
+        "description": "Professionals specialized in each area of digital marketing working together to offer comprehensive and complete solutions."
+      },
+      "todo-en-uno": {
+        "title": "All in One Place",
+        "description": "Centralized management of all your digital marketing needs, from strategy to execution, with a single point of contact."
+      }
+    },
+    "pricing": {
+      "title": "Our",
+      "titleHighlight": "Digital Marketing",
+      "titleEnd": "Services",
+      "description": "Complete digital marketing solutions to grow your business.",
+      "categories": {
+        "social-media": {
+          "title": "Social Media Management",
+          "description": "Professional social media management to grow your brand.",
+          "period": "Monthly",
+          "plans": {
+            "social-start": {
+              "name": "Social Start",
+              "setupFee": "Setup Fee: $199 / One-Time Payment",
+              "idealFor": "Entrepreneurs and small businesses starting their social media presence and needing consistent content.",
+              "features": [
+                " Number of platforms: 2",
+                " Included platforms: Instagram, Facebook, LinkedIn or Twitter",
+                " Static or animated posts: 7 per month",
+                " Stories per platform: 4 per month",
+                " Social media audit",
+                " Monthly social media management",
+                " Monthly content calendar",
+                " Monthly content creation",
+                " Monthly social media copywriting",
+                " Social media content upload",
+                " Personalized monthly marketing strategy"
+              ]
+            },
+            "social-pro": {
+              "name": "Social Pro",
+              "setupFee": "Setup Fee: $299 / One-Time Payment",
+              "idealFor": "Established companies looking to increase their engagement and build an active social media community.",
+              "features": [
+                " Number of platforms: 2",
+                " Included platforms: Instagram, Facebook, LinkedIn or Twitter",
+                " Static or animated posts: 10 per month",
+                " Stories per platform: 18 per month",
+                " Community management: Interaction with other pages (2 hours per month)",
+                " Social media audit",
+                " Monthly social media management",
+                " Monthly content calendar",
+                " Monthly content creation",
+                " Monthly social media copywriting",
+                " Social media content upload",
+                " Social profile optimization",
+                " Personalized monthly marketing strategy",
+                " Designated account manager"
+              ]
+            },
+            "social-max": {
+              "name": "Social Max",
+              "setupFee": "Setup Fee: $399 / One-Time Payment",
+              "idealFor": "Brands that require a dominant social media presence with high-quality audiovisual content and included advertising campaigns.",
+              "features": [
+                " Number of platforms: 3",
+                " Included platforms: Instagram, Facebook, LinkedIn or Twitter",
+                " Static or animated posts: 16 per month",
+                " Stories per platform: 28 per month",
+                " 4 edited reels / videos",
+                " Includes 1 social media campaign (setup, design and publication), advertising investment paid by client",
+                " Community management: Interaction with other pages (4 hours per month)",
+                " Social media audit",
+                " Monthly social media management",
+                " Monthly content calendar",
+                " Monthly content creation",
+                " Monthly social media copywriting",
+                " Social media content upload",
+                " Social profile optimization",
+                " Designated account manager"
+              ]
+            }
+          }
+        },
+        "paid-ads": {
+          "title": "Paid Advertising - META ADS",
+          "description": "Professional advertising campaigns on Meta (Facebook and Instagram).",
+          "period": "Monthly",
+          "plans": {
+            "ads-essential": {
+              "name": "Ads Essential",
+              "setupFee": "Setup Fee: $459 / One-Time Payment",
+              "idealFor": "Ad investment less than $2,000 USD/month (paid directly to platforms)",
+              "features": [
+                " 1 Advertising Platform (Facebook, Instagram)",
+                " Ad account setup on Facebook or Instagram",
+                " 1 Meta Ads campaign",
+                " 3 configured ads",
+                " Monthly campaign strategy",
+                " Monthly metrics report",
+                " Objectives and audience setup",
+                " Demographic configuration",
+                " Budget setup and monitoring",
+                " Eligibility verification and ad approval",
+                " Traffic statistics analysis"
+              ]
+            },
+            "ads-growth": {
+              "name": "Ads Growth",
+              "setupFee": "Setup Fee: $659 / One-Time Payment",
+              "idealFor": "Ad investment less than $5,000 USD/month (paid directly to platforms)",
+              "features": [
+                " 1 Advertising Platform (Facebook, Instagram)",
+                " Ad account setup on Facebook or Instagram",
+                " 3 Meta Ads campaigns",
+                " 5 configured ads",
+                " Monthly campaign strategy",
+                " Monthly metrics report",
+                " Objectives and audience setup",
+                " Demographic configuration",
+                " Budget setup and monitoring",
+                " Eligibility verification and ad approval",
+                " Traffic statistics analysis"
+              ]
+            },
+            "ads-premium": {
+              "name": "Ads Premium",
+              "setupFee": "Setup Fee: $859 / One-Time Payment",
+              "idealFor": "Ad investment less than $10,000 USD/month (paid directly to platforms)",
+              "features": [
+                " 1 Advertising Platform (Facebook, Instagram)",
+                " Ad account setup on Facebook or Instagram",
+                " Unlimited Meta Ads campaigns",
+                " Editing and production of 1 reel for ads",
+                " Daily optimization",
+                " Monthly campaign strategy",
+                " Monthly metrics report",
+                " Advanced objectives and audience setup",
+                " Demographic configuration",
+                " Budget setup and monitoring",
+                " Eligibility verification and ad approval",
+                " Traffic statistics analysis"
+              ]
+            }
+          }
+        },
+        "seo": {
+          "title": "SEO - Google Positioning",
+          "description": "Position your website in the top Google results.",
+          "period": "Monthly",
+          "plans": {
+            "seo-essential": {
+              "name": "SEO Essential",
+              "setupFee": "Setup Fee: $629 / One-Time Payment",
+              "idealFor": "Businesses that want to start ranking on Google with a solid SEO strategy and optimized keywords.",
+              "features": [
+                "✓ Initial Audit",
+                "✓ 50 Keywords",
+                "✓ SEO-optimized web structure",
+                "✓ Monthly solid positioning strategy",
+                "✓ Google My Business (GMB) setup",
+                "✓ Monthly metrics report",
+                "✓ Strategic link building"
+              ]
+            },
+            "seo-advanced": {
+              "name": "SEO Advanced",
+              "setupFee": "Setup Fee: $529 / One-Time Payment",
+              "idealFor": "Competitive companies looking to dominate their niche with monthly blog content and aggressive SEO strategy.",
+              "features": [
+                "✓ Initial Audit",
+                "✓ 85 Keywords",
+                "✓ 10 Monthly blog posts on website",
+                "✓ SEO-optimized web structure",
+                "✓ Monthly solid positioning strategy",
+                "✓ Google My Business (GMB) setup",
+                "✓ Monthly metrics report",
+                "✓ Strategic link building"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "faq": {
+      "title": "",
+      "titleHighlight": "Frequently Asked",
+      "titleEnd": " Questions",
+      "items": {
+        "presupuesto-meta": {
+          "question": "What is the recommended minimum budget for a Meta (Facebook/Instagram) advertising campaign?",
+          "answer": "We recommend a minimum budget of $500-$1,000 USD monthly for effective Meta Ads campaigns. This amount allows Meta's algorithm to collect enough data to optimize your ads, perform A/B tests and reach your target audience consistently. With lower budgets, the campaign may take longer to generate measurable results and limits segmentation and optimization options."
+        },
+        "resultados-tiempo": {
+          "question": "How long does it take to see results with a digital marketing strategy?",
+          "answer": "First performance indicators usually appear in 2-4 weeks, but solid and consistent results are generally observed between 3-6 months. Digital marketing is a continuous optimization process: the first 30 days are dedicated to data collection, the next 60 days to adjustment and optimization, and from the third month is when results consolidate. Patience and constant analysis are key to long-term success."
+        },
+        "google-vs-meta": {
+          "question": "Is it better to invest in Google Ads or Meta Ads for my business?",
+          "answer": "It depends on your goals and type of business. Google Ads is ideal for capturing existing demand (people already searching for your product/service), while Meta Ads works better for generating demand and creating awareness. The most effective is usually a combined strategy: use Google Ads for high-intent direct conversions and Meta Ads to build audience, remarketing and engagement. We analyze your specific case to determine the best budget distribution between both platforms."
+        },
+        "roi-medicion": {
+          "question": "How is return on investment (ROI) measured in digital marketing?",
+          "answer": "We measure ROI through multiple metrics: cost per acquisition (CPA), customer lifetime value (LTV), conversion rate, and return on ad spend (ROAS). We implement tracking pixels, configure Analytics conversions, and generate detailed monthly reports that show exactly how many leads, sales or valuable actions each dollar invested generated. Full transparency in metrics is essential to demonstrate the real impact of each campaign."
+        }
+      }
+    }
+  },
+  "custom": {
+    "meta": {
+      "title": "Custom Software Development | Molokaih",
+      "description": "We transform your vision into exceptional digital experiences that captivate your audience and grow your business."
+    },
+    "hero": {
+      "titleBefore": "Software",
+      "titleHighlight": "Development",
+      "titleAfter": "to scale your business",
+      "description": "We transform your vision into exceptional digital experiences that captivate your audience and grow your business.",
+      "btnServices": "Services",
+      "btnContact": "Contact"
+    },
+    "whyInvest": {
+      "title": "Why",
+      "titleHighlight": "Invest",
+      "titleEnd": "in Custom Software?",
+      "description": "Every company has unique processes that cannot be completely solved with generic tools. At Molokaih, we design custom software that adapts to your workflow, automates your operations and scales with your business, ensuring a real and sustainable competitive advantage.",
+      "adaptabilidad": {
+        "title": "Total Adaptability",
+        "description": "Software that molds to your specific processes, not the other way around. Every function designed for your unique workflow."
+      },
+      "automatizacion": {
+        "title": "Intelligent Automation",
+        "description": "Eliminate repetitive tasks and free up valuable time. Your team focused on what really matters."
+      },
+      "escalabilidad": {
+        "title": "Guaranteed Scalability",
+        "description": "Grow without limits. Software that evolves with your business, adding features when you need them."
+      }
+    },
+    "projects": {
+      "title": "All in One",
+      "titleHighlight": "Technology Suite",
+      "description": "Discover some of the projects that transformed ideas into functional and scalable software solutions",
+      "items": {
+        "gestion": {
+          "title": "Business Management System",
+          "description": "Complete platform for operations administration and control"
+        },
+        "logistica": {
+          "title": "Enterprise Logistics",
+          "description": "Mobile solution for real-time delivery tracking and management"
+        },
+        "portal": {
+          "title": "Client Portal",
+          "description": "Digital ecosystem for user interaction and self-management"
+        }
+      }
+    },
+    "projectsMarketing": {
+      "title": "Transform Your Business with",
+      "titleHighlight": "Smart Technology",
+      "description": "Real solutions that drive growth, optimize processes, and multiply your results. See how we turn challenges into competitive advantages.",
+      "items": {
+        "erp": {
+          "title": "Complete Management Systems",
+          "description": "Centralize everything in one place: sales, inventory, finance, and clients. Save time and make smarter decisions.",
+          "cta": "Boost your operations"
+        },
+        "automation": {
+          "title": "Process Automation",
+          "description": "Eliminate repetitive tasks and focus on what matters. Increase productivity by up to 300% with intelligent automation.",
+          "cta": "Automate and grow"
+        },
+        "dashboard": {
+          "title": "Executive Dashboard",
+          "description": "Visualize your business performance in real time. Key metrics, KPIs and automated reports for agile and effective decision making.",
+          "cta": "Monitor your business"
+        },
+        "analytics": {
+          "title": "Advanced Analytics",
+          "description": "Interactive dashboards with complex charts, predictive analytics and machine learning. Convert data into strategic insights to drive growth.",
+          "cta": "Analyze and predict"
+        }
+      }
+    },
+    "services": {
+      "title": "Our",
+      "titleHighlight": "Services",
+      "titleEnd": "",
+      "description": "At Molokaih we offer software solutions designed to generate real impact on your company. We focus on innovation, scalability and efficiency to accompany your growth.",
+      "desarrolloMedida": {
+        "title": "Custom Software Development",
+        "description": "We create personalized solutions that perfectly adapt to your business processes, optimizing every workflow and maximizing operational efficiency."
+      },
+      "aplicaciones": {
+        "title": "Web and Mobile Applications",
+        "description": "We develop multi-platform applications with latest generation technologies, guaranteeing exceptional performance and intuitive user experiences."
+      },
+      "integraciones": {
+        "title": "Integrations and Automations",
+        "description": "We connect your existing systems and automate repetitive processes, allowing your team to focus on high-value strategic tasks."
+      },
+      "consultoria": {
+        "title": "Technology Consulting",
+        "description": "We advise on the choice of appropriate technologies, software architecture and digital transformation strategies to drive sustainable growth."
+      }
+    },
+    "benefits": {
+      "title": "Key Benefits of Working with",
+      "titleHighlight": "Molokaih",
+      "description": "Choosing Molokaih means partnering with a team that understands both technology and business strategy. Our goal is to build tools that work today and remain competitive.",
+      "medida": {
+        "title": "Tailored to Your Business",
+        "description": "We design each solution from scratch, adapting to your unique processes. No generic templates, only software that reflects your vision and specific needs."
+      },
+      "seguro": {
+        "title": "Secure and Reliable",
+        "description": "We implement best security practices in every line of code. Your information and your customers' protected with the highest industry standards."
+      },
+      "integracion": {
+        "title": "Ready for Integration",
+        "description": "Our solutions connect seamlessly with your existing systems. Robust APIs and complete documentation for smooth and fast integration."
+      }
+    },
+    "howWeWork": {
+      "title": "How We",
+      "titleHighlight": "Work"
+    },
+    "faq": {
+      "title": "",
+      "titleHighlight": "Frequently Asked",
+      "titleEnd": " Questions",
+      "items": {
+        "tiempo": {
+          "question": "How long does it take to develop custom software?",
+          "answer": "The time depends on the project's complexity. A simple application can be ready in 4-6 weeks, while complete enterprise systems can take 3-6 months. During the initial consultation, we define a realistic timeline based on your specific needs."
+        },
+        "integracion": {
+          "question": "Can you integrate the software with my existing tools?",
+          "answer": "Yes. We specialize in building integrations with CRMs, ERPs, APIs and other business tools to optimize workflows and ensure all your systems work in harmony."
+        },
+        "cloud": {
+          "question": "Do you also offer cloud-based solutions?",
+          "answer": "Absolutely. We develop and implement cloud-native solutions on platforms like AWS, Google Cloud and Azure. This ensures scalability, security and access from anywhere, reducing infrastructure costs."
+        },
+        "empresas": {
+          "question": "What type of companies benefit from custom software?",
+          "answer": "Any company with unique processes or specific needs that generic tools cannot cover. From startups that need an MVP to established companies seeking advanced automation or competitive advantages through technology."
+        },
+        "soporte": {
+          "question": "Do you offer post-launch support?",
+          "answer": "Yes. We offer ongoing support and maintenance plans that include updates, bug fixes, performance optimizations and new features. Your software will always be up to date and running at maximum capacity."
+        }
+      }
+    }
+  },
+  "servicesCards": {
+    "webDev": {
+      "title": "Web Development",
+      "description": "Transform your vision into powerful digital platforms. We build lightning-fast, SEO-optimized websites and scalable web applications that drive conversions, enhance user experience, and position your brand as an industry leader."
+    },
+    "design": {
+      "title": "Custom Software",
+      "description": "Break free from generic solutions. We engineer bespoke software tailored to your unique workflows, automate complex processes, and give you the competitive edge that off-the-shelf products simply cannot deliver."
+    },
+    "marketing": {
+      "title": "Digital Marketing",
+      "description": "Stop wasting ad spend. Our data-driven strategies and expertly managed Google Ads campaigns deliver qualified leads, maximize ROI, and turn your marketing budget into measurable revenue growth month after month."
+    },
+    "automation": {
+      "title": "Process Automation",
+      "description": "Reclaim hours every day. We automate repetitive tasks, streamline operations with AI-powered chatbots, and optimize your workflows so your team focuses on what truly matters—growing your business."
+    }
+  },
+  "whyChooseUs": {
+    "item1": {
+      "title": "Professional Brand Identity",
+      "description": "We build cohesive and timeless visual identities that reflect your brand’s personality, strengthen recognition, and create a lasting connection with your audience."
+    },
+    "item2": {
+      "title": "Social Media Management and Strategy",
+      "description": "Digital marketing strategies focused on measurable results. We increase your ROI with optimized campaigns on Google Ads, social media and SEO."
+    },
+    "item3": {
+      "title": "Strategic Digital Advertising",
+      "description": "We design and execute online advertising campaigns on Google Ads, social media and other channels, to maximize your reach, generate leads and convert customers."
+    },
+    "item4": {
+      "title": "Digital Process Automation",
+      "description": "We optimize and automate your business processes to save time, reduce costs and eliminate errors. Technology that works for you 24/7."
+    },
+    "item5": {
+      "title": "Custom Software Development",
+      "description": "We create custom software that perfectly adapts to your business's unique needs, scalable and with the latest market technologies."
+    }
+  },
+  "timeline": {
+    "step1": {
+      "title": "Understanding Your Needs",
+      "description": "We meet with you to thoroughly understand your business, goals and challenges. This phase is crucial to align our strategy with your expectations and objectives."
+    },
+    "step2": {
+      "title": "Strategic Planning",
+      "description": "We develop a detailed plan that includes timelines, resources and technologies to be used, ensuring efficient and effective execution."
+    },
+    "step3": {
+      "title": "Design and Prototyping",
+      "description": "We create wireframes and interactive prototypes to visualize the structure, flow and user experience, ensuring that every element is aligned with your goals and expectations."
+    },
+    "step4": {
+      "title": "Development and Implementation",
+      "description": "Our developers and designers work together to build the solution, conducting continuous testing to ensure quality and functionality at every stage of the process."
+    },
+    "step5": {
+      "title": "Testing and Optimization",
+      "description": "We conduct exhaustive testing to identify and correct any issues, optimizing performance and user experience before launch."
+    },
+    "step6": {
+      "title": "Review and Refinement",
+      "description": "We gather your feedback and make necessary adjustments to ensure the final product meets your expectations and objectives."
+    },
+    "step7": {
+      "title": "Launch and Ongoing Support",
+      "description": "We launch your project and monitor results, providing ongoing support and improvements based on real data."
+    }
+  },
+  "common": {
+    "discoverMore": "Discover More",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "backHome": "Back Home",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "getStarted": "Get Started",
+    "viewProjects": "View Projects",
+    "viewProject": "View project",
+    "features": "Features",
+    "whatsappCTA": "Ready to work with our team?",
+    "whatsappButton": "Let's talk on WhatsApp",
+    "priceDisclaimer": "The prices mentioned above are expressed in Canadian dollars and do not include HST"
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog | Molokaih - Development and Technology Articles",
+      "description": "Discover articles, guides and tutorials about web development, design, and the latest technology trends."
+    },
+    "title": "Latest",
+    "titleHighlight": "Articles",
+    "noArticles": "No articles in this category",
+    "categories": {
+      "Automatización de Procesos": "Process Automation",
+      "Agencia Digital": "Digital Agency",
+      "Diseño web moderno": "Modern Web Design",
+      "Empresa de diseño web": "Web Design Company",
+      "Software a medida": "Custom Software",
+      "Agencia de marketing de rendimiento": "Performance Marketing Agency",
+      "Agencia Google Ads": "Google Ads Agency",
+      "Todos": "All",
+      "Sin categoría": "Uncategorized"
+    }
+  },
+  "ariaLabels": {
+    "automationServices": "Automation services",
+    "whyChooseAutomation": "Why choose our solutions",
+    "howWeWork": "How we work",
+    "whyInvestCustom": "Why invest in custom software",
+    "teamSection": "The team behind every solution",
+    "missionSection": "Molokaih mission",
+    "automationShowcase": "Automations showcase",
+    "customAssistant": "Personalized assistant",
+    "automationFaq": "Frequently asked questions about automations",
+    "customFaq": "Frequently asked questions about custom software",
+    "customBenefits": "Key benefits of working with Molokaih",
+    "customServices": "Custom software services",
+    "customProjects": "Custom software projects",
+    "aboutValues": "Molokaih values",
+    "contactForm": "Contact form",
+    "faqSection": "Frequently asked questions",
+    "marketingPortfolio": "Marketing Portfolio",
+    "marketingServices": "Marketing Services",
+    "marketingHero": "Marketing Hero",
+    "aboutHero": "About Hero",
+    "mainHero": "Main hero"
+  },
+  "testimonials": {
+    "title": "More than 150 companies have trusted us to grow their business.",
+    "subtitle": "Discover how our work has made a difference for businesses.",
+    "1": {
+      "name": "Оксана Роздорожная",
+      "testimonial": "Very happy with my experience with Molokaih! A professional team that responds quickly, communicates clearly, and delivers real results. Highly recommend."
+    },
+    "2": {
+      "name": "Camila Torres",
+      "testimonial": "Their work exceeded our expectations. The team is creative, fast and very professional."
+    },
+    "3": {
+      "name": "Danel Manzanares",
+      "testimonial": "Molokaih has been a true partner for Smart Cap, collaborating in the realization of a truly differentiated digital platform that has completely revolutionized our student experience."
+    },
+    "4": {
+      "name": "Hilla Almog",
+      "testimonial": "If you're looking for a digital marketing company that actually delivers — and feels like a true extension of your team — I highly recommend Molokaih."
+    },
+    "5": {
+      "name": "Martín Herrera",
+      "testimonial": "They helped us completely renovate our website. Not only does it look better, it also loads faster and converts much more. The impact on our sales was immediate."
+    },
+    "6": {
+      "name": "Nico Veinneau",
+      "testimonial": "Molokaih is a great over all company. It knows what's it's doing, and can assist you in everything you neeed. You won't be disappointed with the services. If you are hesitant with other company's, no need to here."
+    },
+    "7": {
+      "name": "Julián Ríos",
+      "testimonial": "I had a serious problem with lead management. Molokaih implemented an automated solution that allowed me to respond instantly and improve conversion."
+    },
+    "8": {
+      "name": "Valeria Castro",
+      "testimonial": "Our social media presence was non-existent. With Molokaih's help, we went from zero to having an active and engaged community in less than three months."
+    },
+    "9": {
+      "name": "Christosch",
+      "testimonial": "The attention I received was so good, very professional and proactive service."
+    },
+    "10": {
+      "name": "Agustina León",
+      "testimonial": "The redesign they did of our website not only improved the visual aspect, it also positioned better on Google. We climbed to the top 3 in weeks."
+    },
+    "11": {
+      "name": "Alena Balashova",
+      "testimonial": "We worked with Molokaih CA to redesign our company website, and the experience exceeded all expectations. From the first consultation to the final launch, the team was professional, innovative, and highly responsive. Highly recommend Molokaih CA to anyone looking for reliable and skilled web technology experts."
+    },
+    "12": {
+      "name": "Mariana Vázquez",
+      "testimonial": "What I value most about working with Molokaih is that they don't sell generic solutions. They listened to my needs and delivered exactly what we needed."
+    }
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "effectiveDate": "Effective Date: 07/13/2023",
+    "paragraphOne": "At Molokaih LLC, we are committed to protecting your privacy and ensuring transparency in how we handle your personal information. This Privacy Policy explains what data we collect, how we use it, and the rights you have regarding your information. Our commitment to privacy is guided by international regulations, including the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), the Lei Geral de Proteção de Dados (LGPD - Brazil), and other global privacy standards.",
+    "paragraphTwo": "By using our services, you acknowledge that you have read and understood this Privacy Policy and agree to the practices described herein. If you do not agree with this policy, please do not use our services.",
+    "sectionOne": {
+      "title": "1. Information We Collect",
+      "text": "We collect personal data in two main ways:",
+      "pointOne": "Information You Provide: When you complete forms, subscribe to updates, or engage with us for business inquiries, we may collect details such as your name, email, phone number, and company information.",
+      "pointTwo": "Automatically Collected Data: When you visit our website, we collect information such as your IP address, browser type, device details, and browsing behavior using cookies and similar technologies.",
+      "pointThree": "Usage Analytics: We analyze how you interact with our services to improve user experience, identify trends, and enhance our offerings.",
+      "pointFour": "Communication Records: We may retain records of correspondence, support requests, and feedback you provide to us.",
+      "pointFive": "Payment Information: When you make transactions, we collect necessary payment details through secure third-party payment processors.",
+      "note": "We do not knowingly collect personal information from individuals under the age of 18. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately."
+    },
+    "sectionTwo": {
+      "title": "2. Purpose and Legal Basis for Processing Your Data",
+      "text": "We use your information for the following purposes:",
+      "pointOne": "Service Delivery: To provide, maintain, and improve our digital services efficiently.",
+      "pointTwo": "Communication: To send updates, respond to inquiries, and offer relevant marketing promotions (when applicable).",
+      "pointThree": "Analytics and Security: To analyze engagement, maintain platform security, and comply with regulatory requirements.",
+      "pointFour": "Third-Party Sharing: We do not sell personal data. We only share it with trusted partners essential for service delivery (payment processors, analytics providers).",
+      "pointFive": "Legal Basis: We process data based on legitimate interest, contractual obligations, legal compliance, and explicit consent for marketing activities.",
+      "note": "You have the right to withdraw your consent for marketing communications at any time by clicking the unsubscribe link in our emails or contacting us directly at privacy@molokaih.com."
+    },
+    "sectionThree": {
+      "title": "3. Data Retention and Security Measures",
+      "text": "We prioritize the security and proper management of your data:",
+      "pointOne": "Data Retention: We only retain your data for as long as necessary to fulfill the purposes described in this policy. After the retention period, we ensure secure deletion or anonymization.",
+      "pointTwo": "Security Measures: We implement strong encryption, access controls, and regular security audits to protect your data from unauthorized access or breaches.",
+      "pointThree": "International Transfers: When data is transferred across jurisdictions, we ensure compliance with global privacy standards using Standard Contractual Clauses and Data Processing Agreements.",
+      "pointFour": "Your Rights: You have the right to access, modify, or delete your personal data, restrict processing, or opt out of marketing communications at any time.",
+      "pointFive": "Exercise Your Rights: To exercise these rights, contact us at privacy@molokaih.com.",
+      "note": "While we implement industry-standard security measures, no method of transmission over the internet is 100% secure. We continuously work to enhance our security practices and respond promptly to any potential security incidents."
+    },
+    "sectionFour": {
+      "title": "4. Third-Party Links and Policy Updates",
+      "text": "Important information about external links and policy changes:",
+      "pointOne": "Third-Party Links: Our website may contain links to external sites. We partner only with trusted organizations, but we recommend reviewing their privacy policies before sharing personal data.",
+      "pointTwo": "Policy Updates: We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements.",
+      "pointThree": "Notification: Any significant changes will be communicated through our website with a revised effective date.",
+      "pointFour": "Acceptance: Continued use of our services after updates constitutes acceptance of the revised policy.",
+      "note": "We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information. The 'Last Updated' date at the bottom of this page indicates when the policy was last revised."
+    },
+    "sectionFive": {
+      "title": "5. Governing Law and Jurisdiction",
+      "text": "Legal framework and dispute resolution:",
+      "pointOne": "Governing Law: This Privacy Policy is governed by the laws of Delaware, United States of America.",
+      "pointTwo": "International Compliance: We adhere to applicable international data protection regulations including GDPR (EU), CCPA (California), and LGPD (Brazil).",
+      "pointThree": "Jurisdiction: Any disputes arising from this policy shall be resolved in the courts of Delaware, USA.",
+      "pointFour": "Alternative Jurisdiction: Disputes may also be resolved in the appropriate jurisdiction as required by applicable law.",
+      "pointFive": "Legal Updates: We continuously monitor changes in privacy laws to ensure ongoing compliance.",
+      "note": "If you are located outside the United States, please be aware that your information will be transferred to, stored, and processed in the United States where our servers are located."
+    },
+    "paragraphThree": {
+      "text": "If you have any questions about our privacy practices or wish to exercise your rights, please contact us at privacy@molokaih.com."
+    },
+    "lastUpdated": "Last Updated: March 7, 2025"
+  },
+  "TermsOfUse": {
+    "title": "Terms of Use",
+    "effectiveDate": "Effective Date: 07/13/2023",
+    "paragraphOne": "Welcome to Molokaih LLC ('Molokaih,' 'we,' 'our,' or 'us'). These Terms of Use govern your access to and use of our website ('Website') and services. By accessing or using our Website, you agree to comply with these Terms. If you do not agree, please refrain from using our services.",
+    "sectionOne": {
+      "title": "1. Use of Our Website and Services",
+      "text": "Molokaih provides digital solutions, including software development, web services, and consulting. You may use our Website and services only for lawful purposes and in accordance with these Terms. You agree not to:",
+      "pointOne": "Violate any applicable laws or regulations.",
+      "pointTwo": "Interfere with the proper functioning of our Website.",
+      "pointThree": "Use the Website for fraudulent or harmful activities.",
+      "pointFour": "Copy, modify, or distribute content from the Website without authorization.",
+      "note": "We reserve the right to suspend or terminate access to our services if we detect any violation of these Terms or suspect fraudulent activity."
+    },
+    "sectionTwo": {
+      "title": "2. Intellectual Property Rights",
+      "text": "All content, trademarks, logos, and intellectual property displayed on the Website are the exclusive property of Molokaih or its licensors. You may not use, copy, reproduce, or distribute any content without prior written consent from us. This includes, but is not limited to:",
+      "pointOne": "Textual, graphic, and audiovisual content of the website.",
+      "pointTwo": "Source code, design, and structure of the website.",
+      "pointThree": "Logos, trademarks, and branding elements.",
+      "pointFour": "Technical documentation and consulting materials.",
+      "pointFive": "Any software, tools, or applications developed by Molokaih.",
+      "note": "If you wish to use our content for commercial purposes, please contact us at info@molokaih.com to discuss licensing arrangements."
+    },
+    "sectionThree": {
+      "title": "3. Third-Party Links and Services",
+      "text": "Our Website may contain links to third-party websites or services for informational purposes. It is important to understand the following aspects:",
+      "pointOne": "Third-Party Independence: Molokaih is not responsible for the content, policies, or practices of third-party sites.",
+      "pointTwo": "User Risk: Accessing external sites is at your own risk and responsibility.",
+      "pointThree": "Policy Review: We encourage you to review their terms and privacy policies before engaging with them.",
+      "pointFour": "No Endorsement: Links to third-party sites do not constitute an endorsement by Molokaih.",
+      "pointFive": "Limitation of Liability: We are not liable for any damages or losses resulting from your use of third-party services.",
+      "note": "We strive to partner only with trusted entities, but we cannot guarantee the security or accuracy of external sites."
+    },
+    "sectionFour": {
+      "title": "4. Disclaimers and Limitation of Liability",
+      "text": "Molokaih provides its Website and services 'as is' and 'as available.' We do not guarantee uninterrupted access, accuracy, or error-free performance. To the fullest extent permitted by law, Molokaih disclaims liability for:",
+      "pointOne": "Any direct, indirect, or incidental damages arising from the use of our Website.",
+      "pointTwo": "Any errors, omissions, or inaccuracies in content.",
+      "pointThree": "Any unauthorized access to our servers or data.",
+      "note": "Some jurisdictions do not allow limitations on liability. In such cases, our liability shall be limited to the maximum extent permitted by applicable law."
+    },
+    "sectionFive": {
+      "title": "5. Changes to These Terms",
+      "text": "We reserve the right to update these Terms at any time to reflect changes in our practices or legal requirements. It is important that you understand:",
+      "pointOne": "Right to Modify: We may modify these Terms without prior individual notice.",
+      "pointTwo": "Publication of Changes: Any modifications will be posted on this page with a revised 'Effective Date.'",
+      "pointThree": "Notification: Significant changes will be communicated through our website or by email.",
+      "pointFour": "Implied Acceptance: Continued use of our Website after updates constitutes acceptance of the revised Terms.",
+      "pointFive": "Periodic Review: We recommend reviewing these Terms periodically to stay informed of any changes.",
+      "note": "If you do not agree with the modified Terms, you must stop using our services immediately. Your continued use after publication of changes indicates your acceptance of the new Terms."
+    },
+    "sectionSix": {
+      "title": "6. Governing Law and Jurisdiction",
+      "text": "These Terms of Use are governed by the laws of Delaware, USA. It is important to understand the following legal aspects:",
+      "pointOne": "Governing Law: These Terms are governed by the laws of Delaware, United States of America.",
+      "pointTwo": "International Compliance: We adhere to applicable international regulations based on your location.",
+      "pointThree": "Jurisdiction: Any disputes shall be resolved in the courts of Delaware, USA.",
+      "pointFour": "Alternative Jurisdiction: Disputes may also be resolved in the appropriate jurisdiction as required by applicable law.",
+      "pointFive": "Dispute Resolution: We are committed to resolving disputes fairly and in accordance with applicable law.",
+      "note": "If you are located outside the United States, please be aware that by using our services, you agree that any legal disputes will be governed by Delaware law and resolved in its courts, unless local law requires otherwise."
+    },
+    "paragraphThree": {
+      "text": "If you have any questions regarding these Terms, please contact us at privacy@molokaih.com."
+    },
+    "lastUpdated": "Last Updated: March 7, 2025"
+  },
+  "CookiesPolicy": {
+    "title": "Cookies Policy",
+    "effectiveDate": "Effective Date: 07/13/2023",
+    "paragraphOne": "At Molokaih LLC ('Molokaih,' 'we,' 'our,' or 'us'), we are committed to transparency and protecting your privacy. This Cookies Policy explains what cookies are, how we use them, and how you can manage your preferences. By using our website, you agree to the use of cookies in accordance with this policy.",
+    "paragraphTwo": "Cookies are small text files that are stored on your device when you visit a website. They help us improve your experience, remember your preferences, and analyze how you use our services.",
+    "sectionOne": {
+      "title": "1. Why Do We Use Cookies?",
+      "text": "We use cookies to:",
+      "pointOne": "Ensure the proper functioning of our website.",
+      "pointTwo": "Improve user experience by remembering preferences.",
+      "pointThree": "Analyze website traffic and user behavior.",
+      "pointFour": "Provide personalized content and advertising.",
+      "pointFive": "Enhance security and prevent fraud.",
+      "note": "The use of cookies allows us to provide more personalized services and continuously improve the user experience on our website.",
+      "points": [
+        "Ensure the proper functioning of our website.",
+        "Improve user experience by remembering preferences.",
+        "Analyze website traffic and user behavior.",
+        "Provide personalized content and advertising.",
+        "Enhance security and prevent fraud."
+      ]
+    },
+    "sectionTwo": {
+      "title": "2. Types of Cookies We Use",
+      "text": "We use the following types of cookies:",
+      "pointOne": "Strictly Necessary Cookies: Essential for website functionality, allowing you to navigate and use features securely. These cannot be disabled.",
+      "pointTwo": "Performance Cookies: Help us understand how visitors interact with our site by collecting anonymous data to improve performance.",
+      "pointThree": "Functionality Cookies: Store user preferences (language, region, display settings) to enhance the browsing experience.",
+      "pointFour": "Advertising Cookies: Used to deliver relevant advertisements based on your browsing habits and preferences.",
+      "pointFive": "Analytics Cookies: Allow us to analyze traffic and user behavior to optimize website functionality and services.",
+      "note": "Some cookies are set by third-party services that appear on our pages. You can change your preferences at any time through your browser settings.",
+      "cookieTypes": {
+        "strictlyNecessary": "Strictly Necessary Cookies: Essential for website functionality, allowing you to navigate and use features securely. These cannot be disabled.",
+        "performance": "Performance Cookies: Help us understand how visitors interact with our site by collecting anonymous data to improve performance.",
+        "functionality": "Functionality Cookies: Store user preferences (language, region, display settings) to enhance the browsing experience.",
+        "advertising": "Advertising Cookies: Used to deliver relevant advertisements based on your browsing habits and preferences.",
+        "analytics": "Analytics Cookies: Allow us to analyze traffic and user behavior to optimize website functionality and services."
+      }
+    },
+    "sectionThree": {
+      "title": "3. Managing Cookies",
+      "text": "You can control and manage cookies through your browser settings. Most browsers allow you to:",
+      "pointOne": "Block or delete cookies.",
+      "pointTwo": "Receive notifications before a cookie is stored.",
+      "pointThree": "Adjust preferences for different types of cookies.",
+      "pointFour": "View which cookies are active in your browser.",
+      "pointFive": "Delete specific cookies or all cookies at once.",
+      "points": [
+        "Block or delete cookies.",
+        "Receive notifications before a cookie is stored.",
+        "Adjust preferences for different types of cookies."
+      ],
+      "note": "If you choose to disable cookies, some parts of our website may not function properly.",
+      "instructions": {
+        "chrome": "Google Chrome: Manage cookies in Chrome",
+        "firefox": "Mozilla Firefox: Manage cookies in Firefox",
+        "safari": "Safari: Manage cookies in Safari",
+        "edge": "Microsoft Edge: Manage cookies in Edge"
+      }
+    },
+    "sectionFour": {
+      "title": "4. Updates to This Policy",
+      "text": "We may update this Cookies Policy from time to time to reflect changes in legal requirements or how we use cookies. It is important that you understand:",
+      "pointOne": "Right to Update: We may modify this policy at any time without prior individual notice.",
+      "pointTwo": "Publication of Changes: Any updates will be posted on this page with a revised effective date.",
+      "pointThree": "Notification: Significant changes will be communicated prominently on our website.",
+      "pointFour": "Continued Acceptance: Your continued use of our website after modifications constitutes acceptance of the revised policy.",
+      "pointFive": "Periodic Review: We recommend reviewing this policy regularly to stay informed about how we use cookies.",
+      "note": "If you do not agree with changes to this policy, you can adjust your browser's cookie settings or stop using our website. The 'Last Updated' date at the bottom of this page indicates when the policy was last revised."
+    },
+    "sectionFive": {
+      "title": "5. Contact Us",
+      "text": "If you have any questions about our use of cookies, we are here to help you. You can contact us through:",
+      "pointOne": "Email: privacy@molokaih.com for cookies and privacy inquiries.",
+      "pointTwo": "Response Time: We respond to all inquiries within 48 business hours.",
+      "pointThree": "User Rights: You can request information about which cookies are active in your session.",
+      "pointFour": "Deletion Requests: We can guide you on how to delete or manage cookies in your browser.",
+      "pointFive": "Technical Assistance: Our team can help you with any technical issues related to cookies.",
+      "note": "Your privacy is important to us. We treat all inquiries with confidentiality and are committed to providing clear and helpful responses about our cookie practices."
+    },
+    "paragraphThree": {
+      "text": "Thank you for taking the time to read our Cookies Policy. By continuing to browse our website, you accept the use of cookies as described in this policy."
+    },
+    "lastUpdated": "Last Updated: March 7, 2025"
+  }
+}

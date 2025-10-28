@@ -1,0 +1,17 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cara de robot minimalista en blanco -->
+  <!-- Cabeza -->
+  <rect x="5" y="7" width="14" height="13" rx="2" stroke="white" stroke-width="2" fill="none"/>
+  
+  <!-- Antena superior -->
+  <line x1="12" y1="4" x2="12" y2="7" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="12" cy="3" r="1.5" fill="white"/>
+  
+  <!-- Ojos -->
+  <circle cx="9" cy="12" r="1.5" fill="white"/>
+  <circle cx="15" cy="12" r="1.5" fill="white"/>
+  
+  <!-- Boca sonriente -->
+  <path d="M8 16C8 16 9.5 17.5 12 17.5C14.5 17.5 16 16 16 16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+

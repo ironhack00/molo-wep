@@ -1,0 +1,9 @@
+{
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "telefono": "+1 234 567 890",
+  "email": "juan.perez@example.com",
+  "pais": "Argentina",
+  "mensaje": "Hola, estoy interesado en sus servicios de desarrollo web. Me gustaría recibir más información sobre sus paquetes y precios. También quisiera saber si ofrecen mantenimiento post-lanzamiento. Gracias!"
+}
+
