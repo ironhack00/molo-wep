@@ -38,10 +38,10 @@ export function FeatureContent({
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
-            initial={isMobile ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+            initial={isMobile ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={isMobile ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
-            transition={isMobile ? { duration: 0 } : { duration: 0.2, ease: "easeOut" }}
+            exit={isMobile ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+            transition={isMobile ? { duration: 0 } : { duration: 0.12, ease: "easeOut" }}
             className="space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-7 xl:space-y-8 2xl:space-y-10"
           >
             {/* Icono y contenido */}
@@ -78,10 +78,10 @@ export function FeatureContent({
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
-            initial={isMobile ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
+            initial={isMobile ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={isMobile ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
-            transition={isMobile ? { duration: 0 } : { duration: 0.2, ease: "easeOut" }}
+            exit={isMobile ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.98 }}
+            transition={isMobile ? { duration: 0 } : { duration: 0.12, ease: "easeOut" }}
           >
             {Array.isArray(image) && Array.isArray(imageAlt) ? (
               <DoubleFeatureImage 
