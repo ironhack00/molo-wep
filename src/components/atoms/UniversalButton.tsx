@@ -68,7 +68,7 @@ export const UniversalButton = memo(function UniversalButton({
             src={icon}
             alt=""
             fill
-            className="object-contain brightness-200"
+            className="object-contain brightness-0"
             priority
           />
         </div>

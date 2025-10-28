@@ -113,7 +113,7 @@ export function GenericHowWeWorkSection({
 
       {/* Sección de Testimonios */}
       <div 
-        className="w-full max-w-[2000px] mx-auto flex flex-col justify-center items-center gap-20 py-20 mt-40 relative" 
+        className={cn("w-full max-w-[2000px] mx-auto flex flex-col justify-center items-center gap-20 py-20 mt-40 relative", sectionPadding.x)} 
         style={{ 
           zIndex: 2,
           background: 'transparent' // Fondo transparente para que no se note la unión
@@ -140,19 +140,7 @@ export function GenericHowWeWorkSection({
           </div>
         </div>
 
-        {/* Carrusel infinito - Fila 2 (derecha a izquierda) */}
-        <div className="overflow-hidden w-full">
-          <div className="flex w-max animate-scroll-x-right gap-5">
-            {[...testimonialsData, ...testimonialsData].map((testimonial, index) => (
-              <TestimonialCard
-                key={`row2-${index}`}
-                name={String(tTestimonials(`${testimonial.id}.name`))}
-                testimonial={String(tTestimonials(`${testimonial.id}.testimonial`))}
-                platform={testimonial.platform}
-              />
-            ))}
-          </div>
-        </div>
+        
       </div>
 
       {/* Sección de confianza con banner y CTA - solo si showTrustBanner es true */}
@@ -164,7 +152,7 @@ export function GenericHowWeWorkSection({
           </div> */}
           
           {/* CTA WhatsApp - visible en todas las pantallas */}
-          <div className={cn("relative", sectionPadding.yLarge, sectionPadding.x)} style={{ zIndex: 2 }}>
+          <div className={cn("relative", sectionPadding.x)} style={{ zIndex: 2 }}>
             <CTAWhatsApp />
           </div>
         </>
