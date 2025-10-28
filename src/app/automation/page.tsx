@@ -6,11 +6,11 @@ import { cookies } from 'next/headers';
 
 export async function generateMetadata(): Promise<Metadata> {
   const cookieStore = await cookies();
-  const locale = cookieStore.get('NEXT_LOCALE')?.value || 'en';
+  const locale = cookieStore.get('locale')?.value || 'en';
   const messages = (await import(`../../../messages/${locale}.json`)).default;
 
   return {
-    title: messages.automation.meta.title,
+    title: messages.pageTitles.automation,
     description: messages.automation.meta.description,
     keywords: [...SEO_CONFIG.keywords, "automation", "chatbots", "social media", "smart automation", "24/7 chatbots"],
     authors: [{ name: SEO_CONFIG.siteName, url: SEO_CONFIG.siteUrl }],
@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     
     openGraph: {
-      title: messages.automation.meta.title,
+      title: messages.pageTitles.automation,
       description: messages.automation.meta.description,
       type: "website",
       locale: locale === 'es' ? 'es_ES' : 'en_US',
@@ -38,7 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
     
     twitter: {
       card: "summary_large_image",
-      title: messages.automation.meta.title,
+      title: messages.pageTitles.automation,
       description: messages.automation.meta.description,
       images: [SEO_CONFIG.ogImage],
     },
@@ -51,7 +51,7 @@ export async function generateMetadata(): Promise<Metadata> {
  */
 export default async function page() {
   const cookieStore = await cookies();
-  const locale = cookieStore.get('NEXT_LOCALE')?.value || 'en';
+  const locale = cookieStore.get('locale')?.value || 'en';
   const messages = (await import(`../../../messages/${locale}.json`)).default;
   
   const automationFAQSchema = {

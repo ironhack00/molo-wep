@@ -9,45 +9,22 @@ import { cookies } from 'next/headers';
  */
 export async function generateMetadata(): Promise<Metadata> {
   const cookieStore = await cookies();
-  const locale = cookieStore.get('NEXT_LOCALE')?.value || 'en';
-
-  const translations = {
-    en: {
-      title: "About Us - Molokaih",
-      description: "Meet Molokaih, your ally in digital transformation. We combine web development, marketing and technology to drive your business.",
-      keywords: [
-        "molokaih",
-        "about us",
-        "digital agency",
-        "development team",
-        "company values",
-        "mission vision",
-        "digital transformation",
-        "molokaih team",
-      ],
-    },
-    es: {
-      title: "Sobre Nosotros - Molokaih",
-      description: "Conoce a Molokaih, tu aliado en transformación digital. Combinamos desarrollo web, marketing y tecnología para impulsar tu negocio.",
-      keywords: [
-        "molokaih",
-        "sobre nosotros",
-        "agencia digital",
-        "equipo desarrollo",
-        "valores empresa",
-        "misión visión",
-        "transformación digital",
-        "equipo molokaih",
-      ],
-    }
-  };
-
-  const t = translations[locale as keyof typeof translations] || translations.en;
+  const locale = cookieStore.get('locale')?.value || 'en';
+  const messages = (await import(`../../../messages/${locale}.json`)).default;
 
   return {
-    title: t.title,
-    description: t.description,
-    keywords: t.keywords,
+    title: messages.pageTitles.about,
+    description: "Meet Molokaih, your ally in digital transformation. We combine web development, marketing and technology to drive your business.",
+    keywords: [
+      "molokaih",
+      "about us",
+      "digital agency",
+      "development team",
+      "company values",
+      "mission vision",
+      "digital transformation",
+      "molokaih team",
+    ],
     alternates: {
       canonical: "/about",
     },
@@ -60,16 +37,16 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: t.title,
-      description: t.description,
+      title: messages.pageTitles.about,
+      description: "Meet Molokaih, your ally in digital transformation. We combine web development, marketing and technology to drive your business.",
       type: "website",
       url: "/about",
       siteName: "Molokaih",
     },
     twitter: {
       card: "summary_large_image",
-      title: t.title,
-      description: t.description,
+      title: messages.pageTitles.about,
+      description: "Meet Molokaih, your ally in digital transformation. We combine web development, marketing and technology to drive your business.",
     },
   };
 }
@@ -80,7 +57,7 @@ export async function generateMetadata(): Promise<Metadata> {
  */
 export default async function AboutPage() {
   const cookieStore = await cookies();
-  const locale = cookieStore.get('NEXT_LOCALE')?.value || 'en';
+  const locale = cookieStore.get('locale')?.value || 'en';
 
   const schemas = {
     en: {

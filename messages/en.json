@@ -32,6 +32,20 @@
     "termsOfUse": "Terms of Use",
     "cookiePolicy": "Cookie Policy"
   },
+  "pageTitles": {
+    "home": "Digital Solutions for Your Business | Molokaih",
+    "development": "Modern Web Design for Businesses | Molokaih",
+    "marketing": "Digital Marketing Agency and Google Ads | Molokaih",
+    "automation": "Smart Automation for Your Business | Molokaih",
+    "about": "About Us - Molokaih",
+    "blog": "Technology, Design and Marketing Blog | Molokaih",
+    "contact": "Contact Us - Molokaih",
+    "faq": "Frequently Asked Questions - Everything You Need to Know",
+    "developmentSoftware": "Custom Software Development | Molokaih",
+    "privacyPolicy": "Privacy Policy | Molokaih",
+    "termsOfUse": "Terms of Use | Molokaih",
+    "cookiePolicy": "Cookie Policy | Molokaih"
+  },
   "home": {
     "heroTitle": "Digital",
     "heroTitleHighlight": "Solutions",

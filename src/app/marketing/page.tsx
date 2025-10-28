@@ -1,50 +1,57 @@
 import type { Metadata } from "next";
 import { MarketingTemplate } from "@/components/templates/MarketingTemplate";
 import { JsonLd } from "@/components/atoms/JsonLd";
+import { cookies } from 'next/headers';
 
 /**
  * Metadata optimizado para SEO - Página de Marketing
  * Incluye: Open Graph, Twitter Cards, Keywords, Canonical URL
  */
-export const metadata: Metadata = {
-  title: "Agencia de Marketing Digital y Google Ads",
-  description: "Impulsamos tu presencia digital con campañas estratégicas en Google Ads, posicionamiento SEO y redes sociales para maximizar tu alcance y resultados.",
-  keywords: [
-    "marketing digital",
-    "google ads",
-    "gestión google ads",
-    "agencia marketing",
-    "seo",
-    "posicionamiento seo",
-    "redes sociales",
-    "marketing de rendimiento",
-    "campañas publicitarias",
-    "publicidad online",
-  ],
-  alternates: {
-    canonical: "/marketing",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies();
+  const locale = cookieStore.get('locale')?.value || 'en';
+  const messages = (await import(`../../../messages/${locale}.json`)).default;
+
+  return {
+    title: messages.pageTitles.marketing,
+    description: "Impulsamos tu presencia digital con campañas estratégicas en Google Ads, posicionamiento SEO y redes sociales para maximizar tu alcance y resultados.",
+    keywords: [
+      "marketing digital",
+      "google ads",
+      "gestión google ads",
+      "agencia marketing",
+      "seo",
+      "posicionamiento seo",
+      "redes sociales",
+      "marketing de rendimiento",
+      "campañas publicitarias",
+      "publicidad online",
+    ],
+    alternates: {
+      canonical: "/marketing",
+    },
+    robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
     },
-  },
-  openGraph: {
-    title: "Agencia de Marketing Digital y Google Ads",
-    description: "Impulsamos tu presencia digital con campañas estratégicas en Google Ads, posicionamiento SEO y redes sociales.",
-    type: "website",
-    url: "/marketing",
-    siteName: "Molokaih",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Agencia de Marketing Digital y Google Ads",
-    description: "Impulsamos tu presencia digital con campañas estratégicas en Google Ads, posicionamiento SEO y redes sociales.",
-  },
-};
+    openGraph: {
+      title: messages.pageTitles.marketing,
+      description: "Impulsamos tu presencia digital con campañas estratégicas en Google Ads, posicionamiento SEO y redes sociales.",
+      type: "website",
+      url: "/marketing",
+      siteName: "Molokaih",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: messages.pageTitles.marketing,
+      description: "Impulsamos tu presencia digital con campañas estratégicas en Google Ads, posicionamiento SEO y redes sociales.",
+    },
+  };
+}
 
 /**
  * JSON-LD Schema para Marketing Digital

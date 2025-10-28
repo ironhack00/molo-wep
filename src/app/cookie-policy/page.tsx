@@ -1,18 +1,25 @@
 import type { Metadata } from "next";
 import { LegalPageTemplate } from "@/components/templates/LegalPageTemplate";
 import { JsonLd } from "@/components/atoms/JsonLd";
+import { cookies } from 'next/headers';
 
 /**
  * Metadata optimizado para SEO - Cookie Policy
  */
-export const metadata: Metadata = {
-  title: "Cookie Policy | Molokaih",
-  description: "Cookie Policy of Molokaih LLC. Learn how we use cookies on our website.",
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies();
+  const locale = cookieStore.get('locale')?.value || 'en';
+  const messages = (await import(`../../../messages/${locale}.json`)).default;
+
+  return {
+    title: messages.pageTitles.cookiePolicy,
+    description: "Cookie Policy of Molokaih LLC. Learn how we use cookies on our website.",
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 /**
  * JSON-LD Schema para Cookie Policy

@@ -2,47 +2,54 @@ import type { Metadata } from "next";
 import { FAQTemplate } from "@/components/templates/FAQTemplate";
 import { JsonLd } from "@/components/atoms/JsonLd";
 import { generalFAQ } from "@/data/faq/faqData";
+import { cookies } from 'next/headers';
 
 /**
  * Metadata optimizado para SEO - Página FAQ
  * Incluye: Open Graph, Twitter Cards, Keywords, Canonical URL
  */
-export const metadata: Metadata = {
-  title: "Preguntas Frecuentes - Todo lo que Necesitas Saber",
-  description: "Encuentra respuestas a las preguntas más frecuentes sobre nuestros servicios de desarrollo web, marketing digital, automatización y más.",
-  keywords: [
-    "preguntas frecuentes",
-    "faq",
-    "ayuda",
-    "soporte",
-    "información",
-    "dudas",
-    "preguntas molokaih",
-  ],
-  alternates: {
-    canonical: "/faq",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies();
+  const locale = cookieStore.get('locale')?.value || 'en';
+  const messages = (await import(`../../../messages/${locale}.json`)).default;
+
+  return {
+    title: messages.pageTitles.faq,
+    description: "Encuentra respuestas a las preguntas más frecuentes sobre nuestros servicios de desarrollo web, marketing digital, automatización y más.",
+    keywords: [
+      "preguntas frecuentes",
+      "faq",
+      "ayuda",
+      "soporte",
+      "información",
+      "dudas",
+      "preguntas molokaih",
+    ],
+    alternates: {
+      canonical: "/faq",
+    },
+    robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
     },
-  },
-  openGraph: {
-    title: "Preguntas Frecuentes - Molokaih",
-    description: "Todo lo que necesitas saber sobre nuestros servicios.",
-    type: "website",
-    url: "/faq",
-    siteName: "Molokaih",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Preguntas Frecuentes - Molokaih",
-    description: "Todo lo que necesitas saber sobre nuestros servicios.",
-  },
-};
+    openGraph: {
+      title: messages.pageTitles.faq,
+      description: "Todo lo que necesitas saber sobre nuestros servicios.",
+      type: "website",
+      url: "/faq",
+      siteName: "Molokaih",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: messages.pageTitles.faq,
+      description: "Todo lo que necesitas saber sobre nuestros servicios.",
+    },
+  };
+}
 
 /**
  * JSON-LD Schema para FAQPage

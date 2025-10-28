@@ -1,50 +1,57 @@
 import type { Metadata } from "next";
 import { DevelopmentTemplate } from "@/components/templates/DevelopmentTemplate";
 import { JsonLd } from "@/components/atoms/JsonLd";
+import { cookies } from 'next/headers';
 
 /**
  * Metadata optimizado para SEO - Página de Desarrollo Web
  * Incluye: Open Graph, Twitter Cards, Keywords, Canonical URL
  */
-export const metadata: Metadata = {
-  title: "Diseño Web Moderno Para Negocios",
-  description: "Tu sitio web es la cara digital de una marca. En Molokaih creamos sitios que combinan estética, velocidad y SEO.",
-  keywords: [
-    "diseño web",
-    "desarrollo web",
-    "sitios web modernos",
-    "páginas web profesionales",
-    "diseño responsive",
-    "optimización SEO",
-    "desarrollo frontend",
-    "sitios rápidos",
-    "web performance",
-    "diseño UX/UI",
-  ],
-  alternates: {
-    canonical: "/development",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies();
+  const locale = cookieStore.get('locale')?.value || 'en';
+  const messages = (await import(`../../../messages/${locale}.json`)).default;
+
+  return {
+    title: messages.pageTitles.development,
+    description: "Tu sitio web es la cara digital de una marca. En Molokaih creamos sitios que combinan estética, velocidad y SEO.",
+    keywords: [
+      "diseño web",
+      "desarrollo web",
+      "sitios web modernos",
+      "páginas web profesionales",
+      "diseño responsive",
+      "optimización SEO",
+      "desarrollo frontend",
+      "sitios rápidos",
+      "web performance",
+      "diseño UX/UI",
+    ],
+    alternates: {
+      canonical: "/development",
+    },
+    robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
     },
-  },
-  openGraph: {
-    title: "Diseño Web Moderno Para Negocios",
-    description: "Tu sitio web es la cara digital de una marca. En Molokaih creamos sitios que combinan estética, velocidad y SEO.",
-    type: "website",
-    url: "/development",
-    siteName: "Molokaih",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Diseño Web Moderno Para Negocios",
-    description: "Tu sitio web es la cara digital de una marca. En Molokaih creamos sitios que combinan estética, velocidad y SEO.",
-  },
-};
+    openGraph: {
+      title: messages.pageTitles.development,
+      description: "Tu sitio web es la cara digital de una marca. En Molokaih creamos sitios que combinan estética, velocidad y SEO.",
+      type: "website",
+      url: "/development",
+      siteName: "Molokaih",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: messages.pageTitles.development,
+      description: "Tu sitio web es la cara digital de una marca. En Molokaih creamos sitios que combinan estética, velocidad y SEO.",
+    },
+  };
+}
 
 /**
  * JSON-LD Schema para Desarrollo Web
