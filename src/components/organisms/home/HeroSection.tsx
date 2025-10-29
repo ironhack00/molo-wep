@@ -20,7 +20,7 @@ export function HeroSection() {
     >
       {/* Video de fondo */}
       <VideoBackground
-        src="/videos/header_1_optimized.webm"
+        src="https://molokaih.b-cdn.net/header_1.webm"
         poster="/images/design-ux-ui.webp"
       />
 

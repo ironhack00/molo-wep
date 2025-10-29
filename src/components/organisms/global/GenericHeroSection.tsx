@@ -58,7 +58,7 @@ export function GenericHeroSection({
     >
       {/* Video de fondo con tinte personalizado */}
       <VideoBackground
-        src="/videos/header_1_optimized.webm"
+        src="https://molokaih.b-cdn.net/header_1.webm"
         poster="/images/design-ux-ui.webp"
         colorOverlay={colorOverlay}
       />
