@@ -9,8 +9,6 @@ import { Paragraph } from "../../atoms/Paragraph";
 import { cn, sectionPadding, maxWidths, themeColors, glassmorphism } from "@/utils/classNames";
 import { contactFormSchema, type ContactFormData, paises } from "@/lib/validations/contact";
 import { useTranslations } from '@/lib/i18n/IntlProvider';
-import Image from 'next/image';
-import calendly from '@/assets/brands/calendly.svg';
 
 type SubmitStatus = 'idle' | 'loading' | 'success' | 'error';
 
@@ -30,6 +28,8 @@ type SubmitStatus = 'idle' | 'loading' | 'success' | 'error';
 export function ContactFormSection() {
   const [submitStatus, setSubmitStatus] = useState<SubmitStatus>('idle');
   const [errorMessage, setErrorMessage] = useState<string>('');
+  const [showCalendar, setShowCalendar] = useState(false);
+  const [calendarLoading, setCalendarLoading] = useState(true);
   const t = useTranslations('contact.form');
   
   // React Hook Form con Zod resolver
@@ -492,9 +492,13 @@ export function ContactFormSection() {
           </div>
 
           {/* Calendly Button */}
-          <div className="flex justify-center pt-4">
+          <div className="flex justify-center">
             <motion.button
-              onClick={() => window.open("https://calendly.com/hello-molokaih", "_blank", "noopener,noreferrer")}
+              onClick={() => setShowCalendar((prev) => {
+                const next = !prev;
+                if (next) setCalendarLoading(true);
+                return next;
+              })}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={cn(
@@ -502,7 +506,8 @@ export function ContactFormSection() {
                 "w-full md:w-auto md:px-16 px-8 py-4 text-lg rounded-full font-semibold",
                 "transition-all duration-300 backdrop-blur-xl border-2 cursor-pointer",
                 "flex items-center justify-center gap-2",
-                "bg-white/5 border-white/20 text-white hover:border-white/40"
+                "bg-white/5 border-white/20 text-white hover:border-white/40",
+                showCalendar && "bg-primary/20 border-primary/50"
               )}
               onMouseEnter={(e) => {
                 e.currentTarget.style.boxShadow = "0 0 20px #25d9d860, 0 0 40px #25d9d830";
@@ -513,17 +518,52 @@ export function ContactFormSection() {
             >
               {/* Contenido del botón */}
               <span className="relative z-10 flex items-center justify-center gap-2">
-                {String(t('calendlyButton'))}
-                <Image
-                  src={calendly}
-                  width={500}
-                  height={500}
-                  alt="calendly"
-                  className="h-[20px] w-auto opacity-80"
-                />
+                {showCalendar ? "Cerrar Calendario" : String(t('calendlyButton'))}
+                <svg 
+                  width="20" 
+                  height="20" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2.5"
+                  className={cn("transition-transform duration-300", showCalendar && "rotate-180")}
+                >
+                  <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </span>
             </motion.button>
           </div>
+
+          {/* Calendly Inline Widget - Collapsible */}
+          <AnimatePresence>
+            {showCalendar && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.3 }}
+                className="flex justify-center pt-8 overflow-hidden"
+              >
+                <div className="w-full max-w-4xl">
+                  {calendarLoading && (
+                    <div className="w-full h-[700px] rounded-2xl bg-white/5 animate-pulse" />
+                  )}
+                  <iframe
+                    src="https://calendly.com/hello-molokaih"
+                    width="100%"
+                    height="700"
+                    frameBorder="0"
+                    className="rounded-2xl"
+                    style={{
+                      minHeight: '700px',
+                    }}
+                    onLoad={() => setCalendarLoading(false)}
+                    title="Calendly Scheduling"
+                  />
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </motion.div>
 
         {/* Mensajes de Success/Error */}
