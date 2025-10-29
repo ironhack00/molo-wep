@@ -488,7 +488,7 @@
           "period": "One-Time Payment",
           "plans": {
             "simple-kit": {
-              "name": "Simple Kit",
+              "name": "Starter Website",
               "idealFor": "Entrepreneurs and small businesses that need a professional and functional web presence.",
               "features": [
                 "Up to 5 sections",
@@ -501,7 +501,7 @@
               ]
             },
             "professional-kit": {
-              "name": "Professional Kit",
+              "name": "Business Website",
               "idealFor": "Growing companies looking for a more robust website with better contact tools and SEO.",
               "features": [
                 "Up to 8 sections",
@@ -514,7 +514,7 @@
               ]
             },
             "ultimate-kit": {
-              "name": "Ultimate Kit",
+              "name": "Premium Website",
               "idealFor": "Established companies that require a complete website, with advanced SEO, hosting and domain included for the first year.",
               "features": [
                 "Up to 10 sections",

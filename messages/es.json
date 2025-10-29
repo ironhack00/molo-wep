@@ -488,7 +488,7 @@
           "period": "Pago Único",
           "plans": {
             "simple-kit": {
-              "name": "Simple Kit",
+              "name": "Sitio Web Starter",
               "idealFor": "Emprendedores y pequeñas empresas que necesitan una presencia web profesional y funcional.",
               "features": [
                 "Hasta 5 secciones",
@@ -501,7 +501,7 @@
               ]
             },
             "professional-kit": {
-              "name": "Professional Kit",
+              "name": "Sitio Web Business",
               "idealFor": "Empresas en crecimiento que buscan una web más robusta con mejores herramientas de contacto y SEO.",
               "features": [
                 "Hasta 8 secciones",
@@ -514,7 +514,7 @@
               ]
             },
             "ultimate-kit": {
-              "name": "Ultimate Kit",
+              "name": "Sitio Web Premium",
               "idealFor": "Empresas consolidadas que requieren una web completa, con SEO avanzado, hosting y dominio incluidos para el primer año.",
               "features": [
                 "Hasta 10 secciones",
