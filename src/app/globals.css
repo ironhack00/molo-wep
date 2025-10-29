@@ -326,3 +326,37 @@ select:-webkit-autofill:active {
   background-color: transparent !important;
   mix-blend-mode: multiply;
 }
+
+/* Performance: evitar trabajo de layout/paint en secciones offscreen */
+/* Nota: Deshabilitado temporalmente por problemas de layout */
+/* .cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 1000px;
+} */
+
+/* Accesibilidad: reducir animaciones si el usuario lo pide */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Performance mobile: reducir calidad de animaciones */
+@media (max-width: 768px) {
+  /* Deshabilitar backdrop-filter en mobile para mejor performance */
+  .backdrop-blur-xl {
+    backdrop-filter: blur(8px) !important;
+  }
+  
+  /* Reducir sombras en mobile */
+  .shadow-2xl {
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.8) !important;
+  }
+  
+  /* Optimizar transformaciones */
+  * {
+    will-change: auto !important;
+  }
+}

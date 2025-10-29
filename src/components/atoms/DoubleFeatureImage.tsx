@@ -23,7 +23,9 @@ export function DoubleFeatureImage({ images, alts }: DoubleFeatureImageProps) {
             alt={alts[0]}
             fill
             className="object-contain"
-            sizes="(max-width: 768px) 70vw, 35vw"
+            sizes="(max-width: 640px) 70vw, (max-width: 1024px) 35vw, 25vw"
+            quality={75}
+            loading="lazy"
             style={{
               filter: 'drop-shadow(0 0 25px rgba(37, 217, 216, 0.7)) drop-shadow(0 0 50px rgba(37, 217, 216, 0.5)) drop-shadow(0 0 80px rgba(37, 217, 216, 0.3)) drop-shadow(0 8px 35px rgba(0, 0, 0, 0.7))'
             }}
@@ -39,7 +41,9 @@ export function DoubleFeatureImage({ images, alts }: DoubleFeatureImageProps) {
             alt={alts[1]}
             fill
             className="object-contain"
-            sizes="(max-width: 768px) 70vw, 35vw"
+            sizes="(max-width: 640px) 70vw, (max-width: 1024px) 35vw, 25vw"
+            quality={75}
+            loading="lazy"
             style={{
               filter: 'drop-shadow(0 0 20px rgba(37, 217, 216, 0.6)) drop-shadow(0 0 45px rgba(37, 217, 216, 0.4)) drop-shadow(0 0 70px rgba(37, 217, 216, 0.25)) drop-shadow(0 6px 30px rgba(0, 0, 0, 0.6))'
             }}

@@ -21,9 +21,10 @@ export function FeatureImage({ src, alt, priority = false }: FeatureImageProps) 
           alt={alt}
           fill
           className="object-contain"
-          sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 35vw"
+          sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 33vw"
           quality={priority ? 90 : 85}
           priority={priority}
+          fetchPriority={priority ? "high" : "auto"}
           loading={priority ? "eager" : "lazy"}
           style={{
             filter: 'drop-shadow(0 0 20px rgba(37, 217, 216, 0.4))',

@@ -13,7 +13,7 @@ interface HeaderVideoProps {
 }
 
 const HEADER_VIDEO_SRC = "https://molokaih.b-cdn.net/header_1.webm";
-const HEADER_VIDEO_POSTER = "/images/design-ux-ui.webp";
+const HEADER_VIDEO_POSTER = "https://molokaih.b-cdn.net/design-ux-ui.webp"; // Poster desde CDN
 
 export function HeaderVideo({ colorOverlay }: HeaderVideoProps) {
   return (

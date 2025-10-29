@@ -20,15 +20,26 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'firebasestorage.googleapis.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'molokaih.b-cdn.net',
+      },
     ],
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60 * 60 * 24 * 365, // 1 año
+    dangerouslyAllowSVG: false,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
   // Compresión
   compress: true,
+
+  // Optimizaciones de rendimiento
+  optimizeFonts: true,
+  swcMinify: true,
 
   // Headers de seguridad y rendimiento
   async headers() {
@@ -67,6 +78,26 @@ const nextConfig: NextConfig = {
       // Cache para videos
       {
         source: '/videos/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // Cache para imágenes
+      {
+        source: '/images/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // Cache para _next/image
+      {
+        source: '/_next/image',
         headers: [
           {
             key: 'Cache-Control',

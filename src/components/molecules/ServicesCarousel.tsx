@@ -190,6 +190,7 @@ export function ServicesCarousel({ items }: ServicesCarouselProps) {
                   priority={currentIndex === 0 && currentItem.index === 0}
                   sizes="(max-width: 768px) 100vw, 50vw"
                   quality={currentIndex === 0 && currentItem.index === 0 ? 90 : 85}
+                  fetchPriority={(currentIndex === 0 && currentItem.index === 0) ? "high" : "auto"}
                   loading={currentIndex === 0 && currentItem.index === 0 ? "eager" : "lazy"}
                 />
               </div>

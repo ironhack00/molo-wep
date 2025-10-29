@@ -93,8 +93,10 @@ export const UniversalImage = memo(function UniversalImage({
               fill
               className={imageClasses}
               style={style}
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               priority={priority}
+              quality={priority ? 85 : 75}
+              loading={priority ? "eager" : "lazy"}
               draggable={draggable}
             />
           </div>
@@ -115,6 +117,8 @@ export const UniversalImage = memo(function UniversalImage({
           className={cn(imageClasses, "w-full h-full")}
           style={style}
           priority={priority}
+          quality={priority ? 85 : 75}
+          loading={priority ? "eager" : "lazy"}
           draggable={draggable}
         />
       ) : (
@@ -124,8 +128,10 @@ export const UniversalImage = memo(function UniversalImage({
           fill
           className={imageClasses}
           style={style}
-          sizes="(max-width: 768px) 100vw, 50vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           priority={priority}
+          quality={priority ? 85 : 75}
+          loading={priority ? "eager" : "lazy"}
           draggable={draggable}
         />
       )}

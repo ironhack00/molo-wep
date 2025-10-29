@@ -4,17 +4,17 @@ import dynamic from "next/dynamic";
 import { HeroSection } from "../organisms/home/HeroSection";
 import { BackgroundGlow } from "../molecules/BackgroundGlow";
 
-// Lazy load secciones below the fold para mejor performance
+// Lazy load secciones below the fold para mejor performance en mobile
 const WhyChooseUsSection = dynamic(() => import("../organisms/home/WhyChooseUsSection").then(mod => ({ default: mod.WhyChooseUsSection })), {
-  loading: () => <div className="min-h-screen" />,
+  loading: () => <div className="h-screen" />, // Height fijo, no min-height
 });
 
 const ServicesSection = dynamic(() => import("../organisms/home/ServicesSection").then(mod => ({ default: mod.ServicesSection })), {
-  loading: () => <div className="min-h-screen" />,
+  loading: () => <div className="h-screen" />, // Height fijo
 });
 
 const HowWeWorkSection = dynamic(() => import("../organisms/home/HowWeWorkSection").then(mod => ({ default: mod.HowWeWorkSection })), {
-  loading: () => <div className="min-h-screen" />,
+  loading: () => <div className="h-screen" />, // Height fijo
 });
 
 /**

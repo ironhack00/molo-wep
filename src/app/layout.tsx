@@ -16,19 +16,23 @@ import esMessages from '../../messages/es.json';
  * League Spartan para H1, Poppins para el resto
  */
 const poppins = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "600", "700"], // Solo pesos usados - 70% reducción
   variable: "--font-poppins",
   subsets: ["latin"],
   display: 'swap',
   preload: true,
+  fallback: ['system-ui', 'arial'],
+  adjustFontFallback: true,
 });
 
 const leagueSpartan = League_Spartan({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "600", "700"], // Solo pesos usados - 70% reducción
   variable: "--font-league-spartan",
   subsets: ["latin"],
   display: 'swap',
   preload: true,
+  fallback: ['system-ui', 'arial'],
+  adjustFontFallback: true,
 });
 
 /**
@@ -152,12 +156,12 @@ export default async function RootLayout({
   return (
     <html suppressHydrationWarning>
       <head>
-        {/* Preconnect para recursos externos */}
+        {/* Preconnect críticos primero */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://molokaih.b-cdn.net" crossOrigin="anonymous" />
         
-        {/* DNS Prefetch para mejor rendimiento */}
+        {/* DNS Prefetch */}
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         
