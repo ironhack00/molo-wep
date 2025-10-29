@@ -248,10 +248,10 @@ export function DevelopmentPricingSection() {
                     return idealFor && idealFor !== `categories.${activeCategory}.plans.${plan.id}.idealFor` ? (
                       <div className="px-8 md:px-10 mb-6">
                         <div className={cn(
-                          "p-4 rounded-lg border border-white/10",
+                          "p-4 rounded-lg border border-white/10 min-h-[100px] flex items-center justify-center",
                           glassmorphism.light
                         )}>
-                          <Paragraph size="sm" className="text-white/70 text-center italic">
+                          <Paragraph size="sm" className="text-white/70 text-center italic leading-relaxed">
                             {String(idealFor)}
                           </Paragraph>
                         </div>
