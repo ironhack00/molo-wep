@@ -272,16 +272,18 @@ export function MarketingPricingSection() {
                         const features = t(`categories.${activeCategory}.plans.${plan.id}.features`);
                         return Array.isArray(features) ? features.map((feature: string, idx: number) => (
                           <li key={idx} className="flex items-start gap-3">
-                            <svg 
-                              className="w-5 h-5 flex-shrink-0 mt-0.5" 
-                              fill="none" 
-                              viewBox="0 0 24 24" 
-                              stroke="currentColor"
-                              style={{ color: accentColor }}
-                            >
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                            </svg>
-                            <Paragraph size="sm" className="text-white/80">
+                            {!feature.endsWith(':') && (
+                              <svg 
+                                className="w-5 h-5 flex-shrink-0 mt-0.5" 
+                                fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke="currentColor"
+                                style={{ color: accentColor }}
+                              >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                              </svg>
+                            )}
+                            <Paragraph size="sm" className={feature.endsWith(':') ? "text-white/80 font-bold" : "text-white/80"}>
                               {feature}
                             </Paragraph>
                           </li>
