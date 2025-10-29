@@ -44,9 +44,15 @@ export function WhyCard({
       </div>
 
       {/* Título */}
-      <Heading level={titleLevel} useBaseSize={false} className={cn(themeColors.white, "leading-tight", textSizes.cardTitle)}>
-        {title}
-      </Heading>
+      <div className="min-h-[4rem] flex items-center justify-center">
+        <Heading 
+          level={titleLevel} 
+          useBaseSize={false} 
+          className={cn(themeColors.white, "leading-tight", textSizes.cardTitle)}
+        >
+          {title}
+        </Heading>
+      </div>
 
       {/* Descripción */}
       <Paragraph size="sm" className={cn("text-white/70 leading-relaxed", textSizes[textSize])}>
