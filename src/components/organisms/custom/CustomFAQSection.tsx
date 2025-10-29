@@ -1,4 +1,4 @@
-import { GenericFAQSection } from "../GenericFAQSection";
+import { GenericFAQSection } from "../global/GenericFAQSection";
 import { customFAQ } from "@/data/custom/faqData";
 import { useTranslations } from '@/lib/i18n/IntlProvider';
 

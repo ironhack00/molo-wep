@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionTitle } from "../molecules/SectionTitle";
-import { SectionDescription } from "../molecules/SectionDescription";
-import { WhyCard } from "../molecules/WhyCard";
+import { SectionTitle } from "../../molecules/SectionTitle";
+import { SectionDescription } from "../../molecules/SectionDescription";
+import { WhyCard } from "../../molecules/WhyCard";
 import { cn, sectionPadding, maxWidths, themeColors, textSizes, iconSizes } from "@/utils/classNames";
 import { useTranslations } from '@/lib/i18n/IntlProvider';
 

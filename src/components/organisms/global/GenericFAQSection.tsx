@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { SectionTitle } from "../molecules/SectionTitle";
-import { AccordionItem } from "../molecules/AccordionItem";
+import { SectionTitle } from "../../molecules/SectionTitle";
+import { AccordionItem } from "../../molecules/AccordionItem";
 import { cn, sectionPadding, marginBottom, maxWidths, themeColors, textSizes } from "@/utils/classNames";
 import { useTranslations } from '@/lib/i18n/IntlProvider';
 

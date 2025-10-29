@@ -1,10 +1,10 @@
 "use client";
 
-import { VideoBackground } from "../atoms/VideoBackground";
-import { GradientOverlay } from "../atoms/GradientOverlay";
-import { Heading } from "../atoms/Heading";
-import { Paragraph } from "../atoms/Paragraph";
-import { LazyMotion } from "../atoms/LazyMotion";
+import { VideoBackground } from "../../atoms/VideoBackground";
+import { GradientOverlay } from "../../atoms/GradientOverlay";
+import { Heading } from "../../atoms/Heading";
+import { Paragraph } from "../../atoms/Paragraph";
+import { LazyMotion } from "../../atoms/LazyMotion";
 import { cn, sectionPadding, themeColors, textSizes, maxWidths } from "@/utils/classNames";
 
 interface HeroButton {

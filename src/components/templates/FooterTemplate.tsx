@@ -1,6 +1,6 @@
 "use client";
 
-import { Footer } from "../organisms/Footer";
+import { Footer } from "../organisms";
 
 interface FooterImageSection {
   imageSrc?: string;

@@ -1,4 +1,4 @@
-import { GenericServicesSection } from "../GenericServicesSection";
+import { GenericServicesSection } from "../global/GenericServicesSection";
 import { customServices } from "@/data/custom/servicesData";
 import { useTranslations } from '@/lib/i18n/IntlProvider';
 

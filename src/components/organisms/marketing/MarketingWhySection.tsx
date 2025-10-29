@@ -1,4 +1,4 @@
-import { GenericWhySection } from "../GenericWhySection";
+import { GenericWhySection } from "../global/GenericWhySection";
 import { whyChooseMolokaih } from "@/data/marketing/whyChooseData";
 
 /**

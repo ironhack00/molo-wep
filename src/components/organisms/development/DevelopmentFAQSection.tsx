@@ -1,4 +1,4 @@
-import { GenericFAQSection } from "../GenericFAQSection";
+import { GenericFAQSection } from "../global/GenericFAQSection";
 import { developmentFAQ } from "@/data/development/faqData";
 
 /**

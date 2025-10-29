@@ -1,4 +1,4 @@
-import { GenericServicesSection } from "../GenericServicesSection";
+import { GenericServicesSection } from "../global/GenericServicesSection";
 import { automationServicesData } from "@/data/automation/automationServices";
 import { useTranslations } from '@/lib/i18n/IntlProvider';
 import { cn, sectionPadding, maxWidths } from "@/utils/classNames";

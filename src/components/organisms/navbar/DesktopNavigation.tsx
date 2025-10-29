@@ -1,8 +1,8 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { LocalizedLink } from "../atoms/LocalizedLink";
-import NavModal from "../molecules/NavModal";
+import { LocalizedLink } from "../../atoms/LocalizedLink";
+import NavModal from "../../molecules/NavModal";
 import { getServices } from "@/data/services";
 import { useTranslations, useLocale } from '@/lib/i18n/IntlProvider';
 import { getLocalePrefix } from '@/lib/i18n/routing';

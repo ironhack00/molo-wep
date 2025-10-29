@@ -6,7 +6,7 @@
 
 "use client";
 
-import { GenericHeroSection } from '../GenericHeroSection';
+import { GenericHeroSection } from '../global/GenericHeroSection';
 import { useTranslations } from '@/lib/i18n/IntlProvider';
 import { HERO_ICONS } from '@/components/constants/heroIcons';
 

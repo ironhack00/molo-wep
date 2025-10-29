@@ -1,17 +1,17 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { SectionTitle } from "../molecules/SectionTitle";
-import { TimelineItem } from "../molecules/TimelineItem";
-import { TimelineConnector } from "../molecules/TimelineConnector";
+import { SectionTitle } from "../../molecules/SectionTitle";
+import { TimelineItem } from "../../molecules/TimelineItem";
+import { TimelineConnector } from "../../molecules/TimelineConnector";
 import { timelineData } from "@/data/timelineData";
 import { motion, useInView } from "framer-motion";
-// import { TrustBanner } from "../molecules/TrustBanner"; // Comentado por solicitud del usuario
-import { CTAWhatsApp } from "../molecules/CTAWhatsApp";
-import { TestimonialCard } from "../molecules/TestimonialCard";
+// import { TrustBanner } from "../../molecules/TrustBanner"; // Comentado por solicitud del usuario
+import { CTAWhatsApp } from "../../molecules/CTAWhatsApp";
+import { TestimonialCard } from "../../molecules/TestimonialCard";
 import { testimonialsData } from "@/data/testimonialsData";
-import { useAutoRotate } from "../hooks/useAutoRotate";
-import { useResponsiveValue } from "../hooks/useResponsiveValue";
+import { useAutoRotate } from "../../hooks/useAutoRotate";
+import { useResponsiveValue } from "../../hooks/useResponsiveValue";
 import { cn, sectionPadding, marginBottom, maxWidths } from "@/utils/classNames";
 import { useTranslations } from '@/lib/i18n/IntlProvider';
 

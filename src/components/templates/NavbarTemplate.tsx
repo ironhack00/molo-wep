@@ -4,9 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { LocalizedLink } from "../atoms/LocalizedLink";
 import { Logo } from "../molecules/Logo";
-import { DesktopNavigation } from "../organisms/DesktopNavigation";
-import { MobileNavigation } from "../organisms/MobileNavigation";
-import { MobileDrawer } from "../organisms/MobileDrawer";
+import { DesktopNavigation, MobileNavigation, MobileDrawer } from "../organisms/navbar";
 import { useTranslations } from '@/lib/i18n/IntlProvider';
 
 interface NavbarTemplateProps {

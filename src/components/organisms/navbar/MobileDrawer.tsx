@@ -1,10 +1,10 @@
 "use client";
 
 import { AnimatePresence } from "framer-motion";
-import { Logo } from "../molecules/Logo";
-import { MenuItem } from "../molecules/MenuItem";
-import { ServiceLink } from "../molecules/ServiceLink";
-import { Icon } from "../atoms/Icon";
+import { Logo } from "../../molecules/Logo";
+import { MenuItem } from "../../molecules/MenuItem";
+import { ServiceLink } from "../../molecules/ServiceLink";
+import { Icon } from "../../atoms/Icon";
 import { getServices } from "@/data/services";
 
 interface MobileDrawerProps {

@@ -1,4 +1,4 @@
-import { GenericHowWeWorkSection } from "../GenericHowWeWorkSection";
+import { GenericHowWeWorkSection } from "../global/GenericHowWeWorkSection";
 
 /**
  * Organism: HowWeWorkSection

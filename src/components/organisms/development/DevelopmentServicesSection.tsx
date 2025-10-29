@@ -1,4 +1,4 @@
-import { GenericServicesSection } from "../GenericServicesSection";
+import { GenericServicesSection } from "../global/GenericServicesSection";
 import { developmentServices } from "@/data/development/servicesData";
 
 /**

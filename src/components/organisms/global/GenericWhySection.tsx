@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionTitle } from "../molecules/SectionTitle";
-import { SectionDescription } from "../molecules/SectionDescription";
-import { Heading } from "../atoms/Heading";
-import { Paragraph } from "../atoms/Paragraph";
-import { UniversalImage } from "../atoms/UniversalImage";
-import { WhyCard } from "../molecules/WhyCard";
+import { SectionTitle } from "../../molecules/SectionTitle";
+import { SectionDescription } from "../../molecules/SectionDescription";
+import { Heading } from "../../atoms/Heading";
+import { Paragraph } from "../../atoms/Paragraph";
+import { UniversalImage } from "../../atoms/UniversalImage";
+import { WhyCard } from "../../molecules/WhyCard";
 import { cn, sectionPadding, maxWidths, themeColors, glassmorphism, textSizes, iconSizes } from "@/utils/classNames";
 import { useTranslations } from '@/lib/i18n/IntlProvider';
 
