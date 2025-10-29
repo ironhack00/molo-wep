@@ -61,7 +61,10 @@ export function GenericPricingSection({
         </div>
 
         {/* Grid de Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+        <div className={cn(
+          "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10",
+          plans.length === 2 && "max-w-4xl mx-auto"
+        )}>
           {plans.map((plan, index) => (
             <motion.div
               key={plan.id}
@@ -69,6 +72,7 @@ export function GenericPricingSection({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
+              className={plans.length === 2 ? "flex justify-center" : ""}
             >
               <RadialGlowCard
                 glowColor={accentColor}

@@ -63,7 +63,10 @@ export function GenericWhySection({
       </div>
 
       {/* Grid de razones */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
+      <div className={cn(
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12",
+        whyData.length === 2 && "max-w-4xl mx-auto"
+      )}>
         {whyData.map((item, index) => (
           <motion.div
             key={item.id}
@@ -71,6 +74,7 @@ export function GenericWhySection({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
+            className={whyData.length === 2 ? "flex justify-center" : ""}
           >
             <WhyCard
               icon={item.icon}
