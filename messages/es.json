@@ -348,15 +348,15 @@
     },
     "chatbot": {
       "hotel": {
-        "name": "Asistente virtual del restaurante Maple & Grill, diseñado para responder sobre consultas menu y eventos",
+        "name": "Asistente virtual para restaurantes, diseñado para responder consultas sobre menú y eventos",
         "greeting": "¡Hola! Soy tu asistente de hotel. ¿En qué puedo ayudarte hoy?"
       },
       "restaurant": {
-        "name": "Asistente virtual del Hotel Maple Leaf Lodge, creado para atender consultas sobre habitaciones, servicios, spa y eventos",
+        "name": "Asistente virtual para hoteles, creado para atender consultas sobre habitaciones, servicios, spa y eventos",
         "greeting": "¡Bienvenido! ¿Te gustaría hacer una reserva o conocer nuestro menú?"
       },
       "painting": {
-        "name": "Asistente virtual de la empresa de pintura profesional, enfocado en brindar información sobre pintura residencial, comercial e industrial",
+        "name": "Asistente virtual para empresas de pintura profesional, enfocado en brindar información sobre pintura residencial, comercial e industrial",
         "greeting": "Hola, ¿necesitas un presupuesto de pintura?"
       },
       "flooring": {

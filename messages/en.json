@@ -348,11 +348,11 @@
     },
     "chatbot": {
       "hotel": {
-        "name": "Virtual assistant for Maple & Grill restaurant, designed to respond to menu and event inquiries",
+        "name": "Virtual assistant for restaurants, designed to respond to menu and event inquiries",
         "greeting": "Hello! I'm your hotel assistant. How can I help you today?"
       },
       "restaurant": {
-        "name": "Virtual assistant for Maple Leaf Lodge Hotel, created to handle inquiries about rooms, services, spa and events",
+        "name": "Virtual assistant for hotels, created to handle inquiries about rooms, services, spa and events",
         "greeting": "Welcome! Would you like to make a reservation or see our menu?"
       },
       "painting": {
