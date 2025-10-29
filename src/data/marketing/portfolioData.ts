@@ -20,9 +20,9 @@ export const marketingPortfolio: PortfolioItem[] = [
   { id: 3, category: "Redes Sociales", imageUrl: "/images/marketing/social-3.webp", alt: "Campaña Redes Sociales 3", title: "LinkedIn - B2B Marketing" },
   
   // Branding
-  { id: 4, category: "Branding", imageUrl: "/images/marketing/brand-1.jpeg", alt: "Branding 1", title: "Brand Identity Design", link: "/images/marketing/brand-1.jpeg" },
-  { id: 5, category: "Branding", imageUrl: "/images/marketing/brand-2.jpeg", alt: "Branding 2", title: "Corporate Branding", link: "/images/marketing/brand-2.jpeg" },
-  { id: 13, category: "Branding", imageUrl: "/images/marketing/brand-3.jpeg", alt: "Branding 3", title: "Brand Guidelines", link: "/images/marketing/brand-3.jpeg" },
+  { id: 4, category: "Branding", imageUrl: "/images/marketing/brand-1.webp", alt: "Branding 1", title: "Brand Identity Design", link: "/images/marketing/brand-1.webp" },
+  { id: 5, category: "Branding", imageUrl: "/images/marketing/brand-2.webp", alt: "Branding 2", title: "Corporate Branding", link: "/images/marketing/brand-2.webp" },
+  { id: 13, category: "Branding", imageUrl: "/images/marketing/brand-3.webp", alt: "Branding 3", title: "Brand Guidelines", link: "/images/marketing/brand-3.webp" },
   
   // Reels
   { id: 6, category: "Reels", imageUrl: "https://molokaih.b-cdn.net/m2.mp4", alt: "Reel 1", title: "Reel Marketing 1", isVideo: true },
