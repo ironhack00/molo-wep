@@ -550,7 +550,7 @@ export function MarketingPortfolioSection() {
                             alt={item.alt}
                             fill
                             className={activeFilter === "Branding" ? "object-cover object-top" : "object-cover object-top"}
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            sizes="(max-width: 640px) 334px, (max-width: 1024px) 500px, 600px"
                             priority={index === 0 && activeFilter === "Branding"}
                             quality={isMobile ? 70 : 75}
                             loading="lazy"

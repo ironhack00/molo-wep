@@ -231,7 +231,7 @@ export function StackedServiceCard({
               height={500}
               className="w-full h-full object-cover"
               priority={index === 0}
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 40vw"
               quality={index === 0 ? 90 : 80}
               fetchPriority={index === 0 ? "high" : "auto"}
               loading={index === 0 ? "eager" : "lazy"}
