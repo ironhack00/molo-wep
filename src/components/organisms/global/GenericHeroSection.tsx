@@ -1,6 +1,6 @@
 "use client";
 
-import { VideoBackground } from "../../atoms/VideoBackground";
+import { HeaderVideo } from "../../atoms/HeaderVideo";
 import { GradientOverlay } from "../../atoms/GradientOverlay";
 import { Heading } from "../../atoms/Heading";
 import { Paragraph } from "../../atoms/Paragraph";
@@ -57,11 +57,7 @@ export function GenericHeroSection({
       aria-label={ariaLabel}
     >
       {/* Video de fondo con tinte personalizado */}
-      <VideoBackground
-        src="https://molokaih.b-cdn.net/header_1.webm"
-        poster="/images/design-ux-ui.webp"
-        colorOverlay={colorOverlay}
-      />
+      <HeaderVideo colorOverlay={colorOverlay} />
 
       {/* Contenido */}
       <div className={cn(

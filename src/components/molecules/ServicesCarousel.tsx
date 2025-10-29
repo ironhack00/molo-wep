@@ -187,7 +187,10 @@ export function ServicesCarousel({ items }: ServicesCarouselProps) {
                   width={400}
                   height={300}
                   className="w-full h-full object-cover"
-                  priority={currentItem.index === 0}
+                  priority={currentIndex === 0 && currentItem.index === 0}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={currentIndex === 0 && currentItem.index === 0 ? 90 : 85}
+                  loading={currentIndex === 0 && currentItem.index === 0 ? "eager" : "lazy"}
                 />
               </div>
             </div>

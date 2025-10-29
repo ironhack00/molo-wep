@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { VideoBackground } from "../../atoms/VideoBackground";
+import { HeaderVideo } from "../../atoms/HeaderVideo";
 import { GradientOverlay } from "../../atoms/GradientOverlay";
 import { Logo } from "../../molecules/Logo";
 import { cn, sectionPadding } from "@/utils/classNames";
@@ -19,10 +19,7 @@ export function AboutHeroSection() {
       aria-label={String(useTranslations('ariaLabels')('aboutHero'))}
     >
       {/* Video de fondo */}
-      <VideoBackground
-        src="https://molokaih.b-cdn.net/header_1.webm"
-        poster="/images/design-ux-ui.webp"
-      />
+      <HeaderVideo />
 
       {/* Contenido */}
       <div className={cn(

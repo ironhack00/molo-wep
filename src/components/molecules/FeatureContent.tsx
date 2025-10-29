@@ -91,7 +91,8 @@ export function FeatureContent({
             ) : (
               <FeatureImage 
                 src={typeof image === 'string' ? image : image[0]} 
-                alt={typeof imageAlt === 'string' ? imageAlt : imageAlt[0]} 
+                alt={typeof imageAlt === 'string' ? imageAlt : imageAlt[0]}
+                priority={currentIndex === 0}
               />
             )}
           </motion.div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { VideoBackground } from "../../atoms/VideoBackground";
+import { HeaderVideo } from "../../atoms/HeaderVideo";
 import { GradientOverlay } from "../../atoms/GradientOverlay";
 import { HeroTitle } from "../../molecules/HeroTitle";
 import { HeroDescription } from "../../molecules/HeroDescription";
@@ -19,10 +19,7 @@ export function HeroSection() {
       aria-label={String(useTranslations('ariaLabels')('mainHero'))}
     >
       {/* Video de fondo */}
-      <VideoBackground
-        src="https://molokaih.b-cdn.net/header_1.webm"
-        poster="/images/design-ux-ui.webp"
-      />
+      <HeaderVideo />
 
       {/* Contenido - con padding top para evitar superposición con navbar */}
       <div className={cn("relative z-10 w-full text-center", maxWidths.lg, sectionPadding.x, sectionPadding.yHero)}>

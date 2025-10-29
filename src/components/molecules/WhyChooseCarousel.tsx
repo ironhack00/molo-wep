@@ -124,7 +124,8 @@ export function WhyChooseCarousel({ items }: WhyChooseCarouselProps) {
             ) : (
               <FeatureImage 
                 src={typeof currentItem.image === 'string' ? currentItem.image : currentItem.image[0]} 
-                alt={typeof currentItem.imageAlt === 'string' ? currentItem.imageAlt : currentItem.imageAlt[0]} 
+                alt={typeof currentItem.imageAlt === 'string' ? currentItem.imageAlt : currentItem.imageAlt[0]}
+                priority={currentIndex === 0}
               />
             )}
           </div>
