@@ -68,6 +68,24 @@ export function MarketingPortfolioSection() {
     };
   }, [filteredItems, currentPage, itemsPerPage]);
 
+  // Precargar imágenes de Branding cuando se selecciona el filtro
+  useEffect(() => {
+    if (activeFilter === "Branding") {
+      const brandingImages = marketingPortfolio
+        .filter(item => item.category === "Branding" && !item.isVideo)
+        .map(item => item.imageUrl);
+      
+      // Precargar todas las imágenes de branding
+      brandingImages.forEach(imageUrl => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = imageUrl;
+        document.head.appendChild(link);
+      });
+    }
+  }, [activeFilter]);
+
   // Memoizar handler de cambio de filtro
   const handleFilterChange = useCallback((filter: FilterCategory) => {
     setActiveFilter(filter);
@@ -533,8 +551,9 @@ export function MarketingPortfolioSection() {
                             fill
                             className={activeFilter === "Branding" ? "object-cover object-top" : "object-cover object-top"}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            priority={index === 0}
+                            priority={index < 3 || activeFilter === "Branding"}
                             quality={100}
+                            loading={activeFilter === "Branding" ? "eager" : undefined}
                             placeholder="blur"
                             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                           />
