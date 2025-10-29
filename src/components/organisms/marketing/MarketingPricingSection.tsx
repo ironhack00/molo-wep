@@ -169,13 +169,19 @@ export function MarketingPricingSection() {
         )}
 
         {/* Grid de Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+        <div className={cn(
+          "grid gap-6 sm:gap-8 md:gap-10",
+          currentCategory?.plans.length === 2 
+            ? "grid-cols-1 md:grid-cols-4 max-w-6xl mx-auto" 
+            : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        )}>
           {currentCategory?.plans.map((plan, index) => (
             <motion.div
               key={plan.id}
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
+              className={currentCategory?.plans.length === 2 ? "md:col-span-2" : ""}
             >
               <RadialGlowCard
                 glowColor={accentColor}

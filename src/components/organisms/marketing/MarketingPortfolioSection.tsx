@@ -669,7 +669,12 @@ export function MarketingPortfolioSection() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              transition={{ 
+                type: "spring", 
+                damping: isMobile ? 35 : 25, 
+                stiffness: isMobile ? 400 : 300,
+                duration: isMobile ? 0.2 : 0.4
+              }}
               className="relative w-[80vw] h-[80vh] max-w-4xl max-h-[80vh] mx-4"
               onClick={(e) => e.stopPropagation()}
             >
@@ -720,7 +725,9 @@ export function MarketingPortfolioSection() {
                     className="w-full h-auto object-contain"
                     style={{ minHeight: '100%' }}
                     priority
-                    quality={100}
+                    quality={isMobile ? 90 : 100}
+                    loading="eager"
+                    unoptimized={false}
                     draggable={false}
                   />
                 </motion.div>
