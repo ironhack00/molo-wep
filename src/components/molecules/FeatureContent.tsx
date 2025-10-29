@@ -45,10 +45,10 @@ export function FeatureContent({
             className="space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-7 xl:space-y-8 2xl:space-y-10"
           >
             {/* Icono y contenido */}
-            <div className="flex items-start justify-center lg:justify-start space-x-3">
+            <div className="flex items-baseline justify-center lg:justify-start space-x-3">
               {/* Icono a la izquierda */}
               {icon && (
-                <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 self-baseline">
                   <Image
                     src={icon}
                     alt="Icon"
@@ -61,7 +61,7 @@ export function FeatureContent({
               
               {/* Contenido a la derecha (título + texto) */}
               <div className="flex flex-col space-y-2 text-center lg:text-left">
-                <Heading level="h3" className="text-white">
+                <Heading level="h3" className="text-white leading-tight">
                   {title}
                 </Heading>
                 <Paragraph size="lg" className="text-white/70 leading-relaxed">
