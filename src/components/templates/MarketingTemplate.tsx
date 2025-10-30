@@ -1,14 +1,31 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { 
   MarketingHeroSection, 
-  MarketingIntroSection,
   MarketingPortfolioSection,
-  MarketingServicesSection,
-  MarketingWhySection,
-  MarketingPricingSection,
-  MarketingFAQSection
 } from "../organisms/marketing";
+
+// Cargar bajo demanda secciones below-the-fold para mejorar LCP
+const MarketingIntroSection = dynamic(() => import("../organisms/marketing/MarketingIntroSection").then(m => ({ default: m.MarketingIntroSection })), {
+  loading: () => <div className="h-screen" />,
+});
+
+const MarketingServicesSection = dynamic(() => import("../organisms/marketing/MarketingServicesSection").then(m => ({ default: m.MarketingServicesSection })), {
+  loading: () => <div className="h-screen" />,
+});
+
+const MarketingWhySection = dynamic(() => import("../organisms/marketing/MarketingWhySection").then(m => ({ default: m.MarketingWhySection })), {
+  loading: () => <div className="h-screen" />,
+});
+
+const MarketingPricingSection = dynamic(() => import("../organisms/marketing/MarketingPricingSection").then(m => ({ default: m.MarketingPricingSection })), {
+  loading: () => <div className="h-screen" />,
+});
+
+const MarketingFAQSection = dynamic(() => import("../organisms/marketing/MarketingFAQSection").then(m => ({ default: m.MarketingFAQSection })), {
+  loading: () => <div className="h-screen" />,
+});
 
 /**
  * Template: MarketingTemplate

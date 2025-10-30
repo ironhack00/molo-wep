@@ -37,9 +37,7 @@ const nextConfig: NextConfig = {
   // Compresión
   compress: true,
 
-  // Optimizaciones de rendimiento
-  optimizeFonts: true,
-  swcMinify: true,
+  // Optimizaciones de rendimiento (Next 15 con Turbopack gestiona minificación/fonts)
 
   // Headers de seguridad y rendimiento
   async headers() {
@@ -116,6 +114,7 @@ const nextConfig: NextConfig = {
 
   // Experimental features para mejor rendimiento
   experimental: {
+    optimizeCss: true,
     optimizePackageImports: [
       'framer-motion',
       '@radix-ui/react-icons',

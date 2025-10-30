@@ -1,10 +1,8 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { 
-  AboutHeroSection, 
-  AboutMissionSection, 
-  AboutValuesSection,
-  AboutTeamSection
+  AboutHeroSection
 } from "../organisms/about";
 import { BackgroundGlow } from "../molecules/BackgroundGlow";
 import { CTAWhatsApp } from "../molecules/CTAWhatsApp";
@@ -26,14 +24,10 @@ export function AboutTemplate() {
         {/* Hero Section */}
         <AboutHeroSection />
         
-        {/* Mission Section */}
-        <AboutMissionSection />
-        
-        {/* Values Section */}
-        <AboutValuesSection />
-        
-        {/* Team Section */}
-        <AboutTeamSection />
+        {/* Secciones below-the-fold (carga diferida) */}
+        <DynamicAboutMissionSection />
+        <DynamicAboutValuesSection />
+        <DynamicAboutTeamSection />
         
         {/* CTA WhatsApp */}
         <section className={cn(sectionPadding.y, sectionPadding.x)}>
@@ -43,4 +37,17 @@ export function AboutTemplate() {
     </div>
   );
 }
+
+// Imports dinámicos al final
+const DynamicAboutMissionSection = dynamic(() => import("../organisms/about/AboutMissionSection").then(m => ({ default: m.AboutMissionSection })), {
+  loading: () => <div className="min-h-screen" />,
+});
+
+const DynamicAboutValuesSection = dynamic(() => import("../organisms/about/AboutValuesSection").then(m => ({ default: m.AboutValuesSection })), {
+  loading: () => <div className="min-h-screen" />,
+});
+
+const DynamicAboutTeamSection = dynamic(() => import("../organisms/about/AboutTeamSection").then(m => ({ default: m.AboutTeamSection })), {
+  loading: () => <div className="min-h-screen" />,
+});
 
