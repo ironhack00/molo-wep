@@ -6,7 +6,7 @@ import { ZodError } from "zod";
 // Lazy init de Resend para evitar fallo en build si falta la API key
 let resendClient: Resend | null = null;
 function getResend(): Resend | null {
-  const apiKey = process.env.RESEND_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_RESEND_API_KEY;
   if (!apiKey) return null;
   if (!resendClient) {
     resendClient = new Resend(apiKey);
@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
 
     const { data, error } = await resend.emails.send({
       from: "Molokaih Website <onboarding@resend.dev>", // ⚠️ CAMBIAR cuando verifiques tu dominio
-      to: ["guille.fernandeeez@gmail.com"], // 📧 CAMBIAR AQUÍ el email de destino
+      to: ["correakevinfabian01@gmail.com"], // 📧 CAMBIAR AQUÍ el email de destino
       replyTo: sanitizedData.email, // Responder al cliente
       subject: `Nuevo contacto de ${sanitizedData.nombre} ${sanitizedData.apellido}`,
       html: generateEmailHTML(sanitizedData),
