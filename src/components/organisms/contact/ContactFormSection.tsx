@@ -518,7 +518,7 @@ export function ContactFormSection() {
             >
               {/* Contenido del botón */}
               <span className="relative z-10 flex items-center justify-center gap-2">
-                {showCalendar ? "Cerrar Calendario" : String(t('calendlyButton'))}
+                {showCalendar ? String(t('closeCalendar')) : String(t('calendlyButton'))}
                 <svg 
                   width="20" 
                   height="20" 

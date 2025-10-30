@@ -197,6 +197,7 @@
       "sending": "Sending message...",
       "or": "or",
       "calendlyButton": "Schedule call",
+      "closeCalendar": "Close calendar",
       "successTitle": "Message sent successfully!",
       "successMessage": "Thank you for contacting us. We'll get back to you shortly to help you with your project.",
       "errorTitle": "Error sending",

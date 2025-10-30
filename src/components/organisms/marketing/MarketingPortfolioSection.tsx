@@ -67,6 +67,9 @@ export function MarketingPortfolioSection() {
     };
   }, [filteredItems, currentPage, itemsPerPage]);
 
+  // Flag: en mobile y Branding queremos respuesta instantánea (sin animaciones ni retrasos)
+  const isInstantMobileBranding = isMobile && activeFilter === "Branding";
+
   // Precargar imágenes de Branding lo antes posible (al montar) para evitar retrasos al cambiar de filtro
   useEffect(() => {
     const brandingImages = marketingPortfolio
@@ -130,6 +133,25 @@ export function MarketingPortfolioSection() {
 
   // Memoizar handler de cambio de filtro
   const handleFilterChange = useCallback((filter: FilterCategory) => {
+    // Precalentar imágenes de Branding justo antes de cambiar (evita parpadeo/espera)
+    if (filter === "Branding") {
+      const brandingImages = marketingPortfolio
+        .filter(item => item.category === "Branding" && !item.isVideo)
+        .map(item => item.imageUrl);
+      brandingImages.forEach((imageUrl) => {
+        try {
+          const link = document.createElement('link');
+          link.rel = 'preload';
+          link.as = 'image';
+          link.href = imageUrl;
+          document.head.appendChild(link);
+          const img = new window.Image();
+          img.decoding = 'async';
+          img.loading = 'eager';
+          img.src = imageUrl;
+        } catch {}
+      });
+    }
     setActiveFilter(filter);
     setCurrentPage(0); // Reset página al cambiar filtro
   }, []);
@@ -532,10 +554,10 @@ export function MarketingPortfolioSection() {
               <div className="relative w-full max-w-7xl mx-auto px-4 md:px-8">
                 <motion.div
                   key={`${activeFilter}-${currentPage}`}
-                  initial={{ opacity: 0, x: swipeDirection > 0 ? 300 : -300 }}
+                  initial={{ opacity: isInstantMobileBranding ? 1 : 0, x: isInstantMobileBranding ? 0 : (swipeDirection > 0 ? 300 : -300) }}
                   animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: swipeDirection > 0 ? -300 : 300 }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  exit={{ opacity: isInstantMobileBranding ? 1 : 0, x: isInstantMobileBranding ? 0 : (swipeDirection > 0 ? -300 : 300) }}
+                  transition={{ duration: isInstantMobileBranding ? 0 : 0.5, ease: "easeOut" }}
                   drag={isMobile ? "x" : false}
                   dragConstraints={{ left: 0, right: 0 }}
                   dragElastic={0.2}
@@ -583,11 +605,11 @@ export function MarketingPortfolioSection() {
                     return (
                       <motion.div
                         key={item.id}
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: isInstantMobileBranding ? 1 : 0, y: isInstantMobileBranding ? 0 : 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ 
-                          duration: 0.5, 
-                          delay: index * 0.15,
+                          duration: isInstantMobileBranding ? 0 : 0.5, 
+                          delay: isInstantMobileBranding ? 0 : index * 0.15,
                           ease: "easeOut"
                         }}
                         whileHover={{ scale: 1.03, y: -5 }}
@@ -609,7 +631,7 @@ export function MarketingPortfolioSection() {
                             sizes="(max-width: 640px) 334px, (max-width: 1024px) 500px, 600px"
                             priority={index === 0 || (activeFilter === "Branding" && isMobile && index < 3)}
                             quality={isMobile ? 65 : 75}
-                            loading={index === 0 || (activeFilter === "Branding" && isMobile && index < 3) ? undefined : "lazy"}
+                            loading={(isInstantMobileBranding && index === 0) || index === 0 || (activeFilter === "Branding" && isMobile && index < 3) ? "eager" : "lazy"}
                             placeholder="blur"
                             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                           />
