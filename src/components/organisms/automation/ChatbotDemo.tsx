@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { IconSend, IconTrash, IconUser, IconChefHat, IconBuilding, IconPaint, IconBuildingStore } from "@tabler/icons-react";
 import { Heading } from "../../atoms/Heading";
 import { Paragraph } from "../../atoms/Paragraph";
-import { cn, glassmorphism, glassBorder } from "@/utils/classNames";
+import { cn, glassBorder } from "@/utils/classNames";
 import { useTranslations } from '@/lib/i18n/IntlProvider';
 
 interface Message {

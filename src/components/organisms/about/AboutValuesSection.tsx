@@ -5,7 +5,7 @@ import Image from "next/image";
 import logo from "@/assets/logo.webp";
 import { Heading } from "../../atoms/Heading";
 import { Paragraph } from "../../atoms/Paragraph";
-import { cn, sectionPadding, maxWidths, themeColors, textSizes } from "@/utils/classNames";
+import { cn, sectionPadding, maxWidths, textSizes } from "@/utils/classNames";
 import { useTranslations } from "@/lib/i18n/IntlProvider";
 
 /**

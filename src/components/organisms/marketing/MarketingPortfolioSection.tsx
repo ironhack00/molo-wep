@@ -20,7 +20,6 @@ const ACCENT_COLOR = "#6c63ff";
 export function MarketingPortfolioSection() {
   const [activeFilter, setActiveFilter] = useState<FilterCategory>("Redes Sociales");
   const [currentPage, setCurrentPage] = useState(0);
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [isMuted, setIsMuted] = useState(true);
   const [swipeDirection, setSwipeDirection] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -68,29 +67,95 @@ export function MarketingPortfolioSection() {
     };
   }, [filteredItems, currentPage, itemsPerPage]);
 
-  // Precargar imágenes de Branding cuando se selecciona el filtro
+  // Precargar imágenes de Branding lo antes posible (al montar) para evitar retrasos al cambiar de filtro
   useEffect(() => {
-    if (activeFilter === "Branding") {
-      const brandingImages = marketingPortfolio
-        .filter(item => item.category === "Branding" && !item.isVideo)
-        .map(item => item.imageUrl);
-      
-      // Precargar todas las imágenes de branding
-      brandingImages.forEach(imageUrl => {
+    const brandingImages = marketingPortfolio
+      .filter(item => item.category === "Branding" && !item.isVideo)
+      .map(item => item.imageUrl);
+
+    const preload = () => {
+      brandingImages.forEach((imageUrl) => {
+        // Preload en <head> para que el navegador lo trate con prioridad
         const link = document.createElement('link');
         link.rel = 'preload';
         link.as = 'image';
         link.href = imageUrl;
         document.head.appendChild(link);
+        // Warm the cache con un objeto Image
+        const img = new window.Image();
+        img.src = imageUrl;
       });
+    };
+
+    // En mobile, precargar inmediatamente sin delay
+    if (isMobile) {
+      preload();
+    } else {
+      // Usa requestIdleCallback si está disponible para no bloquear interacción inicial
+      const idleCb = (window as Window & { requestIdleCallback?: (cb: () => void) => number }).requestIdleCallback;
+      if (typeof idleCb === 'function') {
+        idleCb(preload);
+      } else {
+        // Fallback leve para navegadores sin requestIdleCallback
+        setTimeout(preload, 600);
+      }
     }
-  }, [activeFilter]);
+  }, [isMobile]);
+
+  // Precargar imágenes de Redes Sociales al montar (para cambio rápido de filtro)
+  useEffect(() => {
+    const socialImages = marketingPortfolio
+      .filter(item => item.category === "Redes Sociales" && !item.isVideo)
+      .map(item => item.imageUrl);
+
+    const preload = () => {
+      socialImages.forEach((imageUrl) => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = imageUrl;
+        document.head.appendChild(link);
+        const img = new window.Image();
+        img.src = imageUrl;
+      });
+    };
+
+    const idleCb = (window as Window & { requestIdleCallback?: (cb: () => void) => number }).requestIdleCallback;
+    if (typeof idleCb === 'function') {
+      idleCb(preload);
+    } else {
+      setTimeout(preload, 800);
+    }
+  }, []);
 
   // Memoizar handler de cambio de filtro
   const handleFilterChange = useCallback((filter: FilterCategory) => {
     setActiveFilter(filter);
     setCurrentPage(0); // Reset página al cambiar filtro
   }, []);
+
+  // Precargar las siguientes 2 imágenes en mobile cuando se cambia de página
+  useEffect(() => {
+    if (isMobile && activeFilter === "Branding" && filteredItems.length > 0) {
+      const nextIndices = [currentPage + 1, currentPage + 2].filter(idx => idx < filteredItems.length);
+      
+      nextIndices.forEach(idx => {
+        const item = filteredItems[idx];
+        if (item) {
+          // Preload de próxima imagen
+          const link = document.createElement('link');
+          link.rel = 'preload';
+          link.as = 'image';
+          link.href = item.imageUrl;
+          document.head.appendChild(link);
+          
+          // Warm cache
+          const img = new window.Image();
+          img.src = item.imageUrl;
+        }
+      });
+    }
+  }, [currentPage, isMobile, activeFilter, filteredItems]);
 
   // Memoizar handlers de paginación
   const handlePrevPage = useCallback(() => {
@@ -181,15 +246,6 @@ export function MarketingPortfolioSection() {
   const handleTouchEnd = useCallback(() => {
     setIsDraggingModal(false);
   }, []);
-
-  const handleWheel = useCallback((e: React.WheelEvent) => {
-    e.preventDefault();
-    if (e.deltaY < 0) {
-      handleZoomIn();
-    } else {
-      handleZoomOut();
-    }
-  }, [handleZoomIn, handleZoomOut]);
 
   const handleCloseModal = useCallback(() => {
     setSelectedImage(null);
@@ -551,9 +607,9 @@ export function MarketingPortfolioSection() {
                             fill
                             className={activeFilter === "Branding" ? "object-cover object-top" : "object-cover object-top"}
                             sizes="(max-width: 640px) 334px, (max-width: 1024px) 500px, 600px"
-                            priority={index === 0 && activeFilter === "Branding"}
-                            quality={isMobile ? 70 : 75}
-                            loading="lazy"
+                            priority={index === 0 || (activeFilter === "Branding" && isMobile && index < 3)}
+                            quality={isMobile ? 65 : 75}
+                            loading={index === 0 || (activeFilter === "Branding" && isMobile && index < 3) ? undefined : "lazy"}
                             placeholder="blur"
                             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                           />

@@ -6,13 +6,6 @@ import { BackgroundGlow } from "../molecules/BackgroundGlow";
 import { cn, sectionPadding, maxWidths } from "@/utils/classNames";
 import { useTranslations } from '@/lib/i18n/IntlProvider';
 
-interface LegalSection {
-  title: string;
-  text: string;
-  points?: string[];
-  subpoints?: Record<string, string>;
-}
-
 interface LegalPageTemplateProps {
   /** Namespace de traducción (ej: 'PrivacyPolicy', 'TermsOfUse', 'CookiesPolicy') */
   translationNamespace: string;

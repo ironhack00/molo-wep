@@ -24,11 +24,11 @@ const projects: Project[] = [
   },
   {
     id: "dashboard",
-    image: "/images/why-choose-us/dashboard-simple-Photoroom.png"
+    image: "/images/why-choose-us/dashboard-simple-Photoroom.webp"
   },
   {
     id: "analytics",
-    image: "/images/why-choose-us/dashboard-avanzado-Photoroom.png"
+    image: "/images/why-choose-us/dashboard-avanzado-Photoroom.webp"
   }
 ];
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { IconSend, IconTrash, IconUser, IconCoffee, IconBuilding, IconPaint, IconBuildingStore } from "@tabler/icons-react";
 import { Heading } from "../../atoms/Heading";
@@ -86,15 +86,15 @@ export function ChatbotDemoVariant2() {
     return formattedText;
   };
 
-  const scrollToBottom = () => {
+  const scrollToBottom = useCallback(() => {
     if (messagesContainerRef.current) {
       messagesContainerRef.current.scrollTop = messagesContainerRef.current.scrollHeight;
     }
-  };
+  }, []);
 
   useEffect(() => {
     scrollToBottom();
-  }, [messages]);
+  }, [messages, scrollToBottom]);
 
   const switchBot = (botType: string) => {
     setSelectedBot(botType);
@@ -279,7 +279,7 @@ export function ChatbotDemoVariant2() {
     if (lastMessage?.sender === "bot" && !lastMessage?.isTyping) {
       scrollToBottom();
     }
-  }, [messages, selectedBot]);
+  }, [messages, selectedBot, scrollToBottom]);
 
   return (
     <div className="w-full flex flex-col items-center">

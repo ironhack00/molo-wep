@@ -1,6 +1,5 @@
 "use client";
 
-import { WhatsAppIcon } from "../atoms/WhatsAppIcon";
 import { buttonSizes } from "@/utils/classNames";
 import { UniversalButton } from "../atoms/UniversalButton";
 

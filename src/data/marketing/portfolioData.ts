@@ -25,8 +25,8 @@ export const marketingPortfolio: PortfolioItem[] = [
   { id: 13, category: "Branding", imageUrl: "/images/marketing/brand-3.webp", alt: "Branding 3", title: "Brand Guidelines", link: "/images/marketing/brand-3.webp" },
   
   // Reels
-  { id: 6, category: "Reels", imageUrl: "https://molokaih.b-cdn.net/m2.mp4", alt: "Reel 1", title: "Reel Marketing 1", isVideo: true },
-  { id: 7, category: "Reels", imageUrl: "https://molokaih.b-cdn.net/m1.mp4", alt: "Reel 2", title: "Reel Marketing 2", isVideo: true },
+  { id: 6, category: "Reels", imageUrl: "https://molokaih.b-cdn.net/m1.mp4", alt: "Reel 1", title: "Reel Marketing 1", isVideo: true },
+  { id: 7, category: "Reels", imageUrl: "https://molokaih.b-cdn.net/m2.mp4", alt: "Reel 2", title: "Reel Marketing 2", isVideo: true },
   { id: 8, category: "Reels", imageUrl: "https://molokaih.b-cdn.net/m5.mp4", alt: "Reel 3", title: "Reel Marketing 3", isVideo: true },
   { id: 9, category: "Reels", imageUrl: "https://molokaih.b-cdn.net/m6.mp4", alt: "Reel 4", title: "Reel Marketing 4", isVideo: true },
   { id: 10, category: "Reels", imageUrl: "https://molokaih.b-cdn.net/m3.mp4", alt: "Reel 5", title: "Reel Marketing 5", isVideo: true },

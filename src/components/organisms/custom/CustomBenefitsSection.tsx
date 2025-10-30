@@ -5,7 +5,7 @@ import { SectionTitle } from "../../molecules/SectionTitle";
 import { SectionDescription } from "../../molecules/SectionDescription";
 import { WhyCard } from "../../molecules/WhyCard";
 import { customBenefits } from "@/data/custom/benefitsData";
-import { cn, sectionPadding, maxWidths, themeColors, glassmorphism, textSizes, iconSizes } from "@/utils/classNames";
+import { cn, sectionPadding, maxWidths, themeColors, glassmorphism } from "@/utils/classNames";
 import { useTranslations } from '@/lib/i18n/IntlProvider';
 
 /**

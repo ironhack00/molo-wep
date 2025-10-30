@@ -1,10 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/logo.webp";
 import { BackgroundGlow } from "../molecules/BackgroundGlow";
-import { sectionPadding, maxWidths, buttonVariants, buttonSizes, buttonBase } from "@/utils/classNames";
+import { sectionPadding, buttonVariants, buttonSizes, buttonBase } from "@/utils/classNames";
 import { LocalizedLink } from "../atoms/LocalizedLink";
 import { useLocale } from '@/lib/i18n/IntlProvider';
 

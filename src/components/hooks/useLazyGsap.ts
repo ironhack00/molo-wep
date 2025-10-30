@@ -48,6 +48,7 @@ export function useLazyGsap(options: LazyGsapOptions = {}) {
     return () => {
       mounted = false;
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [delay, ...dependencies]);
 
   return {

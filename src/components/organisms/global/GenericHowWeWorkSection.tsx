@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { SectionTitle } from "../../molecules/SectionTitle";
 import { TimelineItem } from "../../molecules/TimelineItem";
 import { TimelineConnector } from "../../molecules/TimelineConnector";
@@ -45,10 +45,10 @@ export function GenericHowWeWorkSection({
   const tTestimonials = useTranslations('testimonials');
   const tAria = useTranslations('ariaLabels');
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: false, amount: 0.3 });
+  const _isInView = useInView(sectionRef, { once: false, amount: 0.3 });
   
   // Hook reutilizable para auto-rotate - siempre activo
-  const { currentIndex, setCurrentIndex } = useAutoRotate(
+  const { currentIndex, setCurrentIndex: _setCurrentIndex } = useAutoRotate(
     timelineData.length,
     undefined,
     true // Siempre activo, no depende de isInView

@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { IconChevronDown } from "@tabler/icons-react";
-import { cn, glassmorphism, glassBorder } from "@/utils/classNames";
+import { cn } from "@/utils/classNames";
 
 const ACCENT_COLOR = "#25d9d8";
 

@@ -77,6 +77,7 @@ export function HeroButtons() {
         >
           {button.text}
           {button.icon && (
+            // eslint-disable-next-line @next/next/no-img-element
             <img src={button.icon} alt="" className="w-5 h-5" />
           )}
         </motion.a>

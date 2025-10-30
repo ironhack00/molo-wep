@@ -8,7 +8,6 @@
 
 import { CustomHeroSection } from '../organisms/custom/CustomHeroSection';
 import { CustomWhySection } from '../organisms/custom/CustomWhySection';
-import { CustomProjectsSection } from '../organisms/custom/CustomProjectsSection';
 import { CustomProjectsMarketingSection } from '../organisms/custom/CustomProjectsMarketingSection';
 import { CustomServicesSection } from '../organisms/custom/CustomServicesSection';
 import { CustomBenefitsSection } from '../organisms/custom/CustomBenefitsSection';

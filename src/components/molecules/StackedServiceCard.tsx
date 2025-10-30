@@ -2,13 +2,10 @@
 
 import { Heading } from "../atoms/Heading";
 import { Paragraph } from "../atoms/Paragraph";
-import { DiagonalGradient } from "../atoms/DiagonalGradient";
 import { cn } from "@/utils/classNames";
 import { useGsapStacking } from "../hooks/useGsapStacking";
 import { useIsMobile } from "../hooks/useIsMobile";
-import { IconChevronRight } from "@tabler/icons-react";
 import Image from "next/image";
-import Link from "next/link";
 import { ServiceButton } from "../atoms/ServiceButton";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -41,7 +38,7 @@ export function StackedServiceCard({
   href
 }: StackedServiceCardProps) {
   // Hook GSAP para stacking
-  const { cardRef, containerRef, isFixed } = useGsapStacking(index, total);
+  const { cardRef, isFixed } = useGsapStacking(index, total);
   const isMobile = useIsMobile();
   
   // Hook para animaciones de entrada

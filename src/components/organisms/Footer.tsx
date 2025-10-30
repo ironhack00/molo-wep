@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Logo } from "../molecules/Logo";
 import { FooterColumn } from "../molecules/FooterColumn";
 import { SocialMedia } from "../molecules/SocialMedia";
 import { InfoSection } from "../molecules/InfoSection";

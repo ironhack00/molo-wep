@@ -17,7 +17,6 @@ interface VideoBackgroundProps {
  */
 export function VideoBackground({ src, poster, colorOverlay }: VideoBackgroundProps) {
   const [isLoading, setIsLoading] = useState(true);
-  const [hasError, setHasError] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -33,7 +32,6 @@ export function VideoBackground({ src, poster, colorOverlay }: VideoBackgroundPr
 
     const handleError = () => {
       clearTimeout(timeoutId);
-      setHasError(true);
       setIsLoading(false);
     };
 

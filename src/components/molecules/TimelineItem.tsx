@@ -16,16 +16,7 @@ interface TimelineItemProps {
   accentColor?: string; // Color personalizable
 }
 
-// Paleta de colores para cada paso de la timeline
-const stepColors = [
-  "#25d9d8", // Paso 1 - Cyan (entendiendo necesidades)
-  "#6c63ff", // Paso 2 - Violeta (planificación)
-  "#ff6b35", // Paso 3 - Naranja (diseño)
-  "#4ecdc4", // Paso 4 - Turquesa (desarrollo)
-  "#45b7d1", // Paso 5 - Azul (pruebas)
-  "#96ceb4", // Paso 6 - Verde (revisión)
-  "#feca57", // Paso 7 - Amarillo (lanzamiento)
-];
+// Paleta de colores removida - no se utiliza en este componente
 
 export function TimelineItem({ 
   number,

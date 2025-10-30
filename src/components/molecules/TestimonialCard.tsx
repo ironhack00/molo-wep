@@ -2,7 +2,6 @@
 
 import { IconStarFilled } from "@tabler/icons-react";
 import { Paragraph } from "../atoms/Paragraph";
-import { cn } from "@/utils/classNames";
 
 interface TestimonialCardProps {
   name: string;

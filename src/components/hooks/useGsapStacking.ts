@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -18,11 +18,11 @@ if (typeof window !== "undefined") {
  * @param index - Índice de la card
  * @param total - Total de cards
  */
-export function useGsapStacking(index: number, _total: number) {
+export function useGsapStacking(_index: number, _total: number) {
   const cardRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isFixed, setIsFixed] = useState(false); // Siempre false - sin efecto fixed
-  const isFirstCard = index === 0;
+  const [_isFixed, _setIsFixed] = useState(false); // Siempre false - sin efecto fixed
+  const _isFirstCard = _index === 0;
 
   // useEffect comentado - sin efecto fixed
   // useEffect(() => {
@@ -64,6 +64,6 @@ export function useGsapStacking(index: number, _total: number) {
   //   };
   // }, [index, isFirstCard]);
 
-  return { cardRef, containerRef, isFixed };
+  return { cardRef, containerRef, isFixed: _isFixed };
 }
 
