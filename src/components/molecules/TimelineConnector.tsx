@@ -22,6 +22,7 @@ export function TimelineConnector({
   lineOffset: _lineOffset, 
   accentColor = "#25d9d8" 
 }: TimelineConnectorProps) {
+  void _lineOffset; // evitar warning por prop no usada
   const progress = totalItems > 1 ? activeIndex / (totalItems - 1) : 0;
   // Usar el color de la página para toda la línea
   const pageColor = accentColor;

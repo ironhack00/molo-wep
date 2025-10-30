@@ -46,6 +46,7 @@ export function GenericHowWeWorkSection({
   const tAria = useTranslations('ariaLabels');
   const sectionRef = useRef(null);
   const _isInView = useInView(sectionRef, { once: false, amount: 0.3 });
+  void _isInView; // evitar warning por var no usada
   
   // Hook reutilizable para auto-rotate - siempre activo
   const { currentIndex, setCurrentIndex: _setCurrentIndex } = useAutoRotate(
@@ -53,6 +54,7 @@ export function GenericHowWeWorkSection({
     undefined,
     true // Siempre activo, no depende de isInView
   );
+  void _setCurrentIndex; // evitar warning por var no usada
 
   // Hook reutilizable para valores responsive
   const lineOffset = useResponsiveValue({

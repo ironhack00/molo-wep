@@ -272,7 +272,7 @@ export function ChatbotDemoVariant2() {
         }));
       }, 2000);
     }
-  }, [selectedBot, t]);
+  }, [selectedBot, t, messages]);
 
   useEffect(() => {
     const lastMessage = messages[selectedBot][messages[selectedBot].length - 1];

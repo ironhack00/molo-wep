@@ -24,6 +24,7 @@ export function useStackedScroll(
   _total: number
 ): UseStackedScrollReturn {
   const cardRef = useRef<HTMLDivElement>(null);
+  void _total; // evitar warning por variable no usada
   const isFirstCard = index === 0;
 
   // Detecta el progreso del scroll de la card

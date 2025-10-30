@@ -21,8 +21,8 @@ if (typeof window !== "undefined") {
 export function useGsapStacking(_index: number, _total: number) {
   const cardRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [_isFixed, _setIsFixed] = useState(false); // Siempre false - sin efecto fixed
-  const _isFirstCard = _index === 0;
+  const [isFixed] = useState(false); // Siempre false - sin efecto fixed
+  void _total; // evitar warning por variable no usada
 
   // useEffect comentado - sin efecto fixed
   // useEffect(() => {
@@ -64,6 +64,6 @@ export function useGsapStacking(_index: number, _total: number) {
   //   };
   // }, [index, isFirstCard]);
 
-  return { cardRef, containerRef, isFixed: _isFixed };
+  return { cardRef, containerRef, isFixed };
 }
 
