@@ -53,10 +53,10 @@ export function NavbarTemplate({
         },
       }}
       transition={{ duration: 0 }}
-      className="fixed w-full top-0 left-0 right-0 flex items-center justify-between py-3 md:py-4 z-[1000] px-4 md:px-8 lg:px-12 xl:px-16 navbar-fixed"
+      className="fixed w-full top-0 left-0 right-0 flex items-center justify-between h-14 md:h-16 z-[1000] px-4 md:px-8 lg:px-12 xl:px-16 navbar-fixed"
     >
       {/* Logo (Left) */}
-      <div className="flex justify-start items-center flex-grow basis-0">
+      <div className="flex justify-start items-center flex-grow basis-0 max-md:hidden">
         <Logo variant="desktop" />
       </div>
 

@@ -286,6 +286,30 @@ export function MarketingPortfolioSection() {
 
   const { totalPages, currentItems, canGoPrev, canGoNext } = paginationData;
 
+  // Indicadores de paginación (bolitas) para mobile
+  const MobileDots = () => {
+    if (!isMobile || paginationData.totalPages <= 1) return null;
+    return (
+      <div className="mt-6 flex items-center justify-center gap-2 md:hidden" aria-label="Paginación móvil">
+        {Array.from({ length: paginationData.totalPages }).map((_, i) => {
+          const isActive = i === currentPage;
+          return (
+            <button
+              key={i}
+              aria-label={`Página ${i + 1} de ${paginationData.totalPages}`}
+              onClick={() => setCurrentPage(i)}
+              className={cn(
+                "h-2.5 rounded-full transition-all duration-300",
+                isActive ? "w-6 bg-violet-400" : "w-2.5 bg-white/30 hover:bg-white/60"
+              )}
+              style={{ boxShadow: isActive ? `0 0 14px ${ACCENT_COLOR}60` : undefined }}
+            />
+          );
+        })}
+      </div>
+    );
+  };
+
   return (
     <section 
       id="success-stories"
@@ -462,6 +486,9 @@ export function MarketingPortfolioSection() {
                     </motion.div>
                   ))}
                 </motion.div>
+
+                {/* Indicadores mobile */}
+                <MobileDots />
 
                 {/* Navegación con flechas más modernas - Solo desktop */}
                 {totalPages > 1 && !isMobile && (
@@ -644,6 +671,9 @@ export function MarketingPortfolioSection() {
                   })}
                 </motion.div>
 
+                {/* Indicadores mobile */}
+                <MobileDots />
+
                 {/* Navegación con flechas modernas - Solo desktop */}
                 {totalPages > 1 && !isMobile && (
                   <motion.div
@@ -729,7 +759,7 @@ export function MarketingPortfolioSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm"
+            className="fixed inset-0 z-[1100] flex items-center justify-center bg-gray-900/80 backdrop-blur-sm"
             onClick={handleCloseModal}
           >
             <motion.div
@@ -748,7 +778,8 @@ export function MarketingPortfolioSection() {
               {/* Botón de cerrar simple */}
               <button
                 onClick={handleCloseModal}
-                className="absolute -top-12 right-0 z-10 p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors backdrop-blur-sm"
+                aria-label="Cerrar"
+                className="absolute top-4 right-4 md:top-4 md:right-4 z-10 p-3 md:p-3.5 rounded-full bg-black/40 hover:bg-black/60 transition-colors backdrop-blur-md border border-white/20 shadow-lg"
               >
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -800,10 +831,10 @@ export function MarketingPortfolioSection() {
                 </motion.div>
 
                 {/* Controles de zoom siempre visibles */}
-                <div className="absolute top-4 right-4 flex items-center gap-2 bg-black/50 rounded-lg px-3 py-2 backdrop-blur-sm">
+                <div className="absolute top-4 right-24 md:right-20 flex items-center gap-1.5 md:gap-2 bg-black/50 rounded-md md:rounded-lg px-2 py-1.5 md:px-3 md:py-2 backdrop-blur-sm">
                   <button
                     onClick={handleZoomOut}
-                    className="p-2 rounded hover:bg-white/20 transition-colors"
+                    className="p-1.5 md:p-2 rounded hover:bg-white/20 transition-colors"
                     disabled={zoomLevel <= 0.25}
                   >
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -811,13 +842,13 @@ export function MarketingPortfolioSection() {
                     </svg>
                   </button>
                   
-                  <span className="text-white text-sm px-2 min-w-[50px] text-center">
+                  <span className="text-white text-xs md:text-sm px-1.5 md:px-2 min-w-[42px] md:min-w-[50px] text-center">
                     {Math.round(zoomLevel * 100)}%
                   </span>
                   
                   <button
                     onClick={handleZoomIn}
-                    className="p-2 rounded hover:bg-white/20 transition-colors"
+                    className="p-1.5 md:p-2 rounded hover:bg-white/20 transition-colors"
                     disabled={zoomLevel >= 4}
                   >
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -827,7 +858,7 @@ export function MarketingPortfolioSection() {
 
                   <button
                     onClick={handleResetZoom}
-                    className="px-3 py-2 rounded bg-white/20 hover:bg-white/30 transition-colors text-white text-sm"
+                    className="px-2.5 py-1.5 md:px-3 md:py-2 rounded bg-white/20 hover:bg-white/30 transition-colors text-white text-xs md:text-sm"
                   >
                     Reset
                   </button>
