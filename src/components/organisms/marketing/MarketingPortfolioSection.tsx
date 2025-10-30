@@ -90,20 +90,9 @@ export function MarketingPortfolioSection() {
       });
     };
 
-    // En mobile, precargar inmediatamente sin delay
-    if (isMobile) {
-      preload();
-    } else {
-      // Usa requestIdleCallback si está disponible para no bloquear interacción inicial
-      const idleCb = (window as Window & { requestIdleCallback?: (cb: () => void) => number }).requestIdleCallback;
-      if (typeof idleCb === 'function') {
-        idleCb(preload);
-      } else {
-        // Fallback leve para navegadores sin requestIdleCallback
-        setTimeout(preload, 600);
-      }
-    }
-  }, [isMobile]);
+    // Precargar inmediatamente en todos los dispositivos
+    preload();
+  }, []);
 
   // Precargar imágenes de Redes Sociales al montar (para cambio rápido de filtro)
   useEffect(() => {
@@ -629,9 +618,9 @@ export function MarketingPortfolioSection() {
                             fill
                             className={activeFilter === "Branding" ? "object-cover object-top" : "object-cover object-top"}
                             sizes="(max-width: 640px) 334px, (max-width: 1024px) 500px, 600px"
-                            priority={index === 0 || (activeFilter === "Branding" && isMobile && index < 3)}
+                            priority={activeFilter === "Branding"}
                             quality={isMobile ? 65 : 75}
-                            loading={(isInstantMobileBranding && index === 0) || index === 0 || (activeFilter === "Branding" && isMobile && index < 3) ? "eager" : "lazy"}
+                            loading={activeFilter === "Branding" ? "eager" : "lazy"}
                             placeholder="blur"
                             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                           />
